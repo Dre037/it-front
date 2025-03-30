@@ -4,7 +4,7 @@
     <mat-label>Confirmar</mat-label>
     <input type="text" matInput [formControl]="control">
 </mat-form-field>
-<div>
+<div class="action-buttons">
     <button mat-button color="primary" mat-dialog-close>Cancelar</button>
     <button mat-flat-button color="primary" [disabled]="control.invalid" [mat-dialog-close]="true">Enviar solicitação</button>
 </div>

@@ -1,9 +1,24 @@
+<mat-toolbar color="accent">
+    <div class="toolbar">
+        <button mat-icon-button (click)="sidenav.opened = !sidenav.opened">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <h3 class="title">It Front</h3>
+        <div class="toolbar__buttons">
+            <button mat-icon-button (click)="setupLight()">
+                <mat-icon>light_mode</mat-icon>
+            </button>
+            <button mat-icon-button (click)="setupDark()">
+                <mat-icon>dark_mode</mat-icon>
+            </button>
+        </div>
+    </div>
+</mat-toolbar>
 <mat-sidenav-container>
-    <mat-sidenav mode="side" opened>
-        <h3>It Front</h3>
+    <mat-sidenav #sidenav mode="side">
         <mat-nav-list>
             <ng-container *ngFor="let link of links">
-                <a mat-list-item [routerLink]="link.route">
+                <a mat-list-item [routerLink]="link.route" [class.selected]="link.route == currentUrl">
                     <mat-icon mat-list-icon>{{link.icon}}</mat-icon>
                     <div mat-line>{{link.title}}</div>
                     <div mat-line>{{link.subtitle}}</div>
@@ -12,6 +27,8 @@
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
-        <router-outlet></router-outlet>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
     </mat-sidenav-content>
 </mat-sidenav-container>

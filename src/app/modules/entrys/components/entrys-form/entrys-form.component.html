@@ -6,6 +6,7 @@
         <mat-select formControlName="idCategoria">
             <mat-option *ngFor="let category of categories$ | async" [value]="category.id">{{category.name}}</mat-option>
         </mat-select>
+        <mat-hint>Selecione uma categoria</mat-hint>
         <mat-error *ngIf="formGroup.get('idCategoria').invalid">Categoria é obrigatório</mat-error>
     </mat-form-field>
     <mat-form-field appearance="outline">
@@ -30,7 +31,7 @@
         <mat-error *ngIf="formGroup.get('value').hasError('required')">O valor é obrigatório</mat-error>
     </mat-form-field>
 </form>
-<div>
+<div class="action-buttons">
     <button mat-button color="primary" mat-dialog-close>Voltar</button>
     <button mat-flat-button color="primary" [disabled]="formGroup.invalid" [mat-dialog-close]="formGroup.value">Confirmar</button>
 </div>

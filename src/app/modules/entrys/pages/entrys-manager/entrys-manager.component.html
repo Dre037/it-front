@@ -1,10 +1,8 @@
-<div>
+<div class="entrys">
     <h3>Gerenciar lançamentos</h3>
     <button mat-button color="primary" (click)="open()">
         <mat-icon>add</mat-icon>
         <span class="ml-1">Novo lançamento</span>
     </button>
 </div>
-<mat-card>
-    <entrys-list [items]="(items$ | async) ?? []" (remove)="removeEntry($event)"></entrys-list>
-</mat-card>
+<entrys-list [items]="(items$ | async) ?? []" (remove)="removeEntry($event)"></entrys-list>

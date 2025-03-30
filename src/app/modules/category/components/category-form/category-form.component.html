@@ -7,7 +7,7 @@
     <mat-error *ngIf="control.hasError('minLength')">A categoria deve ter no mínimo 4 caracteres</mat-error>
     <mat-error *ngIf="control.hasError('maxLength')">A categoria deve ter no máximo 40 caracteres</mat-error>
 </mat-form-field>
-<div>
+<div class="action-buttons">
     <button mat-button color="primary" mat-dialog-close>Voltar</button>
     <button mat-flat-button color="primary" [disabled]="control.invalid" [mat-dialog-close]="{name: control.value}">Confirmar</button>
 </div>

@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { APP_INITIALIZER, Injectable, NgModule } from '@angular/core';
+import { BrowserModule, HAMMER_GESTURE_CONFIG, HammerGestureConfig } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,9 +9,19 @@ import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http'
 import { ConceptModule } from './layouts/concept/concept.module';
 import { CoreModule } from './core/core.module';
-import { StoreModule } from '@ngrx/store';
+import { Store, StoreModule } from '@ngrx/store';
 import { reducers } from './store/global.reducer';
 import { EffectsModule } from '@ngrx/effects';
+import { fetchCategories } from './modules/category/shared/store/category.actions';
+import { CategoryModule } from './modules/category/category.module';
+
+@Injectable()
+export class AppHammerConfig extends HammerGestureConfig {
+  override overrides: { [key: string]: Object; } = {
+    pinch: { enabled: false },
+    rotate: { enabled: false }
+  };
+}
 
 @NgModule({
   declarations: [
@@ -35,10 +45,24 @@ import { EffectsModule } from '@ngrx/effects';
     }),
     EffectsModule.forRoot([]),
     ConceptModule,
+    CategoryModule,
     CoreModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: (store: Store) => () => {
+        store.dispatch(fetchCategories())
+      },
+      deps: [Store],
+      multi: true
+    }, 
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: AppHammerConfig
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
