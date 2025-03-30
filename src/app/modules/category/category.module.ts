@@ -15,6 +15,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CdkColumnDef } from '@angular/cdk/table';
+import { StoreModule } from '@ngrx/store';
+import * as CategoryReducer from './shared/store/category.reducer'
+import { EffectsModule } from '@ngrx/effects';
+import { CategoryEffects } from './shared/store/category.effects';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,8 @@ import { CdkColumnDef } from '@angular/cdk/table';
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forChild(routes),
+    StoreModule.forFeature(CategoryReducer.CategoryFeatureKey, CategoryReducer.reducer),
+    EffectsModule.forFeature([CategoryEffects]),
     MatTableModule,
     MatIconModule,
     MatButtonModule,

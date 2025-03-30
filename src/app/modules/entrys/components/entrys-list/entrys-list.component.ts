@@ -11,7 +11,7 @@ export class EntrysListComponent {
   @Input() items!: Entrys[]
   @Output() remove = new EventEmitter<Entrys>()
 
-  public displayedColumns = ['it-description', 'it-date', 'it-value', 'it-actions']
+  public displayedColumns = ['it-description', 'it-category', 'it-date', 'it-value', 'it-actions']
 
   constructor() { }
 
