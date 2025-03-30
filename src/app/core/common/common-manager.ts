@@ -1,7 +1,6 @@
-import { Component, ComponentDecorator, OnInit } from "@angular/core";
 import { MatDialog } from "@angular/material/dialog";
 import { BehaviorSubject, filter, Observable, switchMap, take } from "rxjs";
-import { DialogRemoveComponent } from "../components/dialog-remove/dialog-remove.component";
+import { DialogRemoveComponent } from "@core/components/dialog-remove/dialog-remove.component";
 
 interface CommonService {
     create: (payload: any) => Observable<any>

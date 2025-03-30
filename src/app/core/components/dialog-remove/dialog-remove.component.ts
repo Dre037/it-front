@@ -1,7 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormControl, ValidatorFn, Validators } from '@angular/forms';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Observable, take } from 'rxjs';
 
 @Component({
   selector: 'app-dialog-remove',

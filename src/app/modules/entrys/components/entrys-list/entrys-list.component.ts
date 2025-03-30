@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Entrys } from '../../shared/interfaces/entrys';
+import { Entrys } from '@entrys/shared/interfaces/entrys';
 
 @Component({
   selector: 'entrys-list',

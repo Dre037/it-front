@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject, filter, switchMap, take } from 'rxjs';
-import { Category } from '../../shared/interfaces/category';
-import { CategoryApiService } from '../../shared/services/category-api.service';
+import { Category } from '@category/shared/interfaces/category';
+import { CategoryApiService } from '@category/shared/services/category-api.service';
 import { MatDialog } from '@angular/material/dialog';
-import { CategoryFormComponent } from '../../components/category-form/category-form.component';
-import { CommonManager } from 'src/app/core/common/common-manager';
+import { CategoryFormComponent } from '@category/components/category-form/category-form.component';
+import { CommonManager } from '@core/common/common-manager';
 import { select, Store } from '@ngrx/store';
-import { CategoryState } from '../../shared/store/category.reducer';
-import * as CategoryActions from '../../shared/store/category.actions';
-import { selectCategories } from '../../shared/store/category.selectors';
+import { CategoryState } from '@category/shared/store/category.reducer';
+import * as CategoryActions from '@category/shared/store/category.actions';
+import { selectCategories } from '@category/shared/store/category.selectors';
 
 @Component({
   selector: 'app-category-manager',
