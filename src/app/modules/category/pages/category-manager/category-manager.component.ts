@@ -5,6 +5,10 @@ import { CategoryApiService } from '../../shared/services/category-api.service';
 import { MatDialog } from '@angular/material/dialog';
 import { CategoryFormComponent } from '../../components/category-form/category-form.component';
 import { CommonManager } from 'src/app/core/common/common-manager';
+import { select, Store } from '@ngrx/store';
+import { CategoryState } from '../../shared/store/category.reducer';
+import * as CategoryActions from '../../shared/store/category.actions';
+import { selectCategories } from '../../shared/store/category.selectors';
 
 @Component({
   selector: 'app-category-manager',
@@ -13,18 +17,21 @@ import { CommonManager } from 'src/app/core/common/common-manager';
 })
 export class CategoryManagerComponent extends CommonManager<CategoryApiService, Category> implements OnInit {
 
-  // private itemsSubj = new BehaviorSubject<Category[]>([])
-  // public items$ = this.itemsSubj.asObservable()
-
   constructor(
+    private store: Store<{ categoryState: CategoryState }>,
     categoryApiService: CategoryApiService,
     matDialog: MatDialog
-  ) { 
+  ) {
     super(categoryApiService, matDialog)
   }
 
   ngOnInit(): void {
-      this.load()
+    this.items$ = this.store.pipe(select(selectCategories))
+    this.load()
+  }
+  
+  public override load(): void {
+    this.store.dispatch(CategoryActions.fetchCategories())
   }
 
   public open() {
@@ -34,36 +41,4 @@ export class CategoryManagerComponent extends CommonManager<CategoryApiService, 
   public removeCategory(category: Category) {
     this.remove(category.id)
   }
-
-  // ngOnInit(): void {
-  //   this.categoryApiService.list().pipe(
-  //     take(1)
-  //   ).subscribe(list => {
-  //     this.itemsSubj.next(list)
-  //   })
-  // }
-
-  // public openDialog() {
-  //   const dialog = this.matDialog.open(CategoryFormComponent, {
-  //     position: {
-  //       top: '24px'
-  //     }
-  //   })
-
-  //   dialog.afterClosed().pipe(
-  //     filter(f => f && true),
-  //     switchMap(({name}) => this.categoryApiService.create({name})),
-  //     take(1)
-  //   ).subscribe(() => {
-
-  //   })
-  // }
-
-  // public removeCategory(category: Category) {
-  //   this.categoryApiService.remove(category.id).pipe(
-  //     take(1)
-  //   ).subscribe(() => {
-
-  //   })
-  // }
 }

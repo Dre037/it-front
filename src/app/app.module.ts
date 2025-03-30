@@ -9,6 +9,9 @@ import { environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http'
 import { ConceptModule } from './layouts/concept/concept.module';
 import { CoreModule } from './core/core.module';
+import { StoreModule } from '@ngrx/store';
+import { reducers } from './store/global.reducer';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,13 @@ import { CoreModule } from './core/core.module';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
+    StoreModule.forRoot(reducers, {
+      runtimeChecks: {
+        strictStateImmutability: true,
+        strictActionImmutability: true
+      }
+    }),
+    EffectsModule.forRoot([]),
     ConceptModule,
     CoreModule,
     HttpClientModule

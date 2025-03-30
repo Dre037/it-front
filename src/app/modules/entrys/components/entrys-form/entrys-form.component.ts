@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDatepickerInputEvent } from '@angular/material/datepicker';
+import { select, Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { Category } from 'src/app/modules/category/shared/interfaces/category';
+import { CategoryState } from 'src/app/modules/category/shared/store/category.reducer';
+import { selectCategories } from 'src/app/modules/category/shared/store/category.selectors';
 
 @Component({
   selector: 'app-entrys-form',
@@ -10,10 +15,10 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 export class EntrysFormComponent implements OnInit {
 
   public formGroup: FormGroup
-
-
+  public categories$: Observable<Category[]>
 
   constructor(
+    private store: Store<{ categoryState: CategoryState }>,
     private fb: FormBuilder
   ) { }
 
@@ -24,6 +29,8 @@ export class EntrysFormComponent implements OnInit {
       date: ['', Validators.required],
       value: ['', Validators.required]
     })
+
+    this.categories$ = this.store.pipe(select(selectCategories))
   }
 
   updateDate(event: MatDatepickerInputEvent<Date>) {
