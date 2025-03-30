@@ -20,7 +20,8 @@ import localePt from '@angular/common/locales/pt'
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 
-registerLocaleData(localePt)
+registerLocaleData(localePt, 'pt-BR')
+console.log('Registrou locale')
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json')
@@ -80,6 +81,7 @@ export class AppHammerConfig extends HammerGestureConfig {
       provide: APP_INITIALIZER,
       useFactory: (store: Store, translate: TranslateService) => () => {
         translate.setDefaultLang('pt-BR')
+        translate.use(translate.defaultLang)
         store.dispatch(fetchCategories())
       },
       deps: [Store, TranslateService],

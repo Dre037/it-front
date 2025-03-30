@@ -34,6 +34,10 @@ mat-sidenav-container {
         color: $light-text;
     }
 
+    mat-icon {
+        color: $light-text;
+    }
+
     &__buttons {
         display: flex;
         gap: 16px;

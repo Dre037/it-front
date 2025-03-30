@@ -19,7 +19,7 @@
     </mat-form-field>
     <mat-form-field appearance="outline">
         <mat-label>{{'ENTRYS.FORM.OCCURRENCE_DATE' | translate}}</mat-label>
-        <input formControlName="date" matInput [matDatepicker]="datepicker" (dateChange)="updateDate($event)">
+        <input formControlName="date" matInput [matDatepicker]="datepicker">
         <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
         <mat-datepicker #datepicker></mat-datepicker>
         <mat-hint>{{'ENTRYS.FORM.TOGGLE_CALENDAR' | translate}}</mat-hint>
@@ -33,5 +33,5 @@
 </form>
 <div class="action-buttons">
     <button mat-button color="primary" mat-dialog-close>{{'ENTRYS.FORM.BACK' | translate}}</button>
-    <button mat-flat-button color="primary" [disabled]="formGroup.invalid" [mat-dialog-close]="formGroup.value">{{'ENTRYS.FORM.CONFIRM' | translate}}</button>
+    <button mat-flat-button color="primary" [disabled]="formGroup.invalid" (click)="sendForm()">{{'ENTRYS.FORM.CONFIRM' | translate}}</button>
 </div>

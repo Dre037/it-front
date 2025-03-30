@@ -1,7 +1,28 @@
 @import '../../../../../theme/material-theme.scss';
 
-.it-table {
+.table-container {
     width: 100%;
+    overflow-x: auto;
+    position: relative;
+
+    &::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        height: 10px;
+        background-color: white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 24px;
+        height: 10px;
+        background-color: $dark-bg-alpha-12;
+    }
+
+    .it-table {
+        width: 100%;
+    }
 }
 
 .header-columns {    
@@ -13,7 +34,7 @@
     }
 }
 
-tr:not(.header-columns):hover {
+tr:not(:is(.header-columns, .footer-row)):hover {
     background-color: rgba($color: map-get($mat-accent, main), $alpha: .10);
 }
 

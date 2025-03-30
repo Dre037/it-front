@@ -40,7 +40,10 @@
             "VALUE_REQUIRED": "O valor é obrigatório",
             "BACK": "Voltar",
             "CONFIRM": "Confirmar"
-        }
+        },
+        "OTHER": "Outra",
+        "OTHERS": "Outras",
+        "CATEGORY_X_VALUE": "Categoria X Valor"
     },
     "MENU": {
         "CATEGORY": "Categoria",

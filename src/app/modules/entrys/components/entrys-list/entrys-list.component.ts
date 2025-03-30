@@ -23,7 +23,8 @@ export class EntrysListComponent {
 
   private _items!: Entrys[]
 
-  constructor() { }
+  constructor() {
+   }
 
   public deleteEvent(entry: Entrys) {
     this.remove.emit(entry)

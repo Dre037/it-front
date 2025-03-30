@@ -1,4 +1,4 @@
-<mat-toolbar color="accent">
+<mat-toolbar color="primary">
     <div class="toolbar">
         <button mat-icon-button (click)="sidenav.opened = !sidenav.opened">
             <mat-icon>menu</mat-icon>
@@ -15,7 +15,7 @@
     </div>
 </mat-toolbar>
 <mat-sidenav-container>
-    <mat-sidenav #sidenav mode="side">
+    <mat-sidenav #sidenav mode="over">
         <mat-nav-list>
             <ng-container *ngFor="let link of links">
                 <a mat-list-item [routerLink]="link.route" [class.selected]="link.route == currentUrl">

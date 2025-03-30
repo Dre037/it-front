@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, registerLocaleData } from '@angular/common';
 import { EntrysManagerComponent } from './pages/entrys-manager/entrys-manager.component';
 import { EntrysListComponent } from './components/entrys-list/entrys-list.component';
 import { EntrysFormComponent } from './components/entrys-form/entrys-form.component';
@@ -19,13 +19,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { TranslateModule } from '@ngx-translate/core';
-
+import { EntrysFilterComponent } from './components/entrys-filter/entrys-filter.component';
 
 @NgModule({
   declarations: [
     EntrysManagerComponent,
     EntrysListComponent,
-    EntrysFormComponent
+    EntrysFormComponent,
+    EntrysFilterComponent
   ],
   imports: [
     CommonModule,

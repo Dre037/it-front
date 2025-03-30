@@ -1,8 +1,16 @@
-<div class="entrys">
-    <h3>{{'ENTRYS.MANAGER' | translate}}</h3>
-    <button mat-button color="primary" (click)="open()">
-        <mat-icon>add</mat-icon>
-        <span class="ml-1">{{'ENTRYS.NEW_ENTRY' | translate}}</span>
-    </button>
+<div class="entry-container">
+    <div class="column">
+        <div class="entrys">
+            <h3>{{'ENTRYS.MANAGER' | translate}}</h3>
+            <button mat-button color="primary" (click)="open()">
+                <mat-icon>add</mat-icon>
+                <span class="ml-1">{{'ENTRYS.NEW_ENTRY' | translate}}</span>
+            </button>
+        </div>
+        <entrys-filter (filter)="filterByFields($event)"></entrys-filter>
+        <entrys-list [items]="(items$ | async) ?? []" (remove)="removeEntry($event)"></entrys-list>
+    </div>
+    <div #chartContainer class="chart-container">
+        <canvas #chart id="chart" role="img"></canvas>
+    </div>
 </div>
-<entrys-list [items]="(items$ | async) ?? []" (remove)="removeEntry($event)"></entrys-list>

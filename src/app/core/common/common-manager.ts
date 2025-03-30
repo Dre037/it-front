@@ -26,13 +26,21 @@ export class CommonManager<S extends CommonService<T>, T> {
         })
     }
 
-    public openDialog(component: any) {
+    public openDialog(component: any, setRef = false) {
         const dialog = this.matDialog.open(component, {
             position: {
                 top: '24px'
             },
             autoFocus: false
         })
+
+        if (setRef) {
+            dialog.afterOpened().pipe(
+                take(1)
+            ).subscribe(() => {
+                dialog.componentInstance['dialogRef'] = dialog
+            })
+        }
 
         dialog.afterClosed().pipe(
             filter(f => f && true),

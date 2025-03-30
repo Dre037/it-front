@@ -19,3 +19,33 @@
 .ml-1 {
     margin-left: 0.5rem;
 }
+
+.entry-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .column {
+        width: calc(60% - 16px);
+        margin-right: 16px;
+    }
+
+    .chart-container {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .entry-container {
+        .column {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+
+        .chart-container {
+            width: 100%;
+        }
+    }
+}
