@@ -266,3 +266,13 @@ body.dark-theme {
         font-family: 'Roboto';
     }
 }
+
+.mat-snack-bar-container.success {
+    background-color: map-get($mat-accent, lighter);
+    color: map-get($mat-accent, main);
+}
+
+.mat-snack-bar-container.failure {
+    background-color: map-get($mat-warn, lighter);;
+    color: map-get($mat-warn, main);
+}

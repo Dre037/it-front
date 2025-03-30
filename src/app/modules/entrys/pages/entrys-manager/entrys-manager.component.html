@@ -1,8 +1,8 @@
 <div class="entrys">
-    <h3>Gerenciar lançamentos</h3>
+    <h3>{{'ENTRYS.MANAGER' | translate}}</h3>
     <button mat-button color="primary" (click)="open()">
         <mat-icon>add</mat-icon>
-        <span class="ml-1">Novo lançamento</span>
+        <span class="ml-1">{{'ENTRYS.NEW_ENTRY' | translate}}</span>
     </button>
 </div>
 <entrys-list [items]="(items$ | async) ?? []" (remove)="removeEntry($event)"></entrys-list>

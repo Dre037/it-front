@@ -17,6 +17,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -30,6 +32,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forChild(routes),
+    TranslateModule,
     MatTableModule,
     MatIconModule,
     MatButtonModule,
@@ -41,6 +44,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatSelectModule,
     MatNativeDateModule,
     MatDatepickerModule,
+    MatSnackBarModule
   ]
 })
 export class EntrysModule { }

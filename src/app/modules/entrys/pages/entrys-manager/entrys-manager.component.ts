@@ -8,6 +8,8 @@ import { CommonManager } from '@core/common/common-manager';
 import { select, Store } from '@ngrx/store';
 import { CategoryState } from '@category/shared/store/category.reducer';
 import { selectCategories } from '@category/shared/store/category.selectors';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-entrys-manager',
@@ -19,9 +21,11 @@ export class EntrysManagerComponent extends CommonManager<EntrysApiService, Entr
   constructor(
     private store: Store<{ categoryState: CategoryState }>,
     private entrysApiService: EntrysApiService,
-    matDialog: MatDialog
+    matDialog: MatDialog,
+    matSnackbar: MatSnackBar,
+    translate: TranslateService
   ) { 
-    super(entrysApiService, matDialog)
+    super(entrysApiService, matDialog, matSnackbar, translate)
   }
 
   ngOnInit(): void {

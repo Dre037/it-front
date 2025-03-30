@@ -1,0 +1,60 @@
+{
+    "CATEGORY": {
+        "MANAGER": "Gerenciar categorias",
+        "NEW_CATEGORY": "Nova categoria",
+        "FORM": {
+            "CREATE": "Criar categoria",
+            "MESSAGE": "Escreva o nome da categoria no campo abaixo",
+            "CATEGORY": "Categoria",
+            "CATEGORY_MINMAX": "min: {{min}} max: {{max}}",
+            "FIELD_REQUIRED": "Campo obrigatório",
+            "CATEGORY_MINLENGTH": "A categoria deve ter no mínimo 4 caracteres",
+            "CATEGORY_MAXLENGTH": "A categoria deve ter no máximo 40 caracteres",
+            "BACK": "Voltar",
+            "CONFIRM": "Confirmar"
+        }
+    },
+    "ENTRYS": {
+        "MANAGER": "Gerenciar lançamentos",
+        "NEW_ENTRY": "Novo lançamento",
+        "DESCRIPTION": "Descrição",
+        "CATEGORY": "Categoria",
+        "DATE": "Data",
+        "VALUE": "Valor",
+        "TOTAL": "Total",
+        "EMPTY": "Nenhum lançamento registrado",
+        "FORM": {
+            "MESSAGE": "Preencha os campos para registrar os lançamentos",
+            "CATEGORY": "Categoria",
+            "SELECT_CATEGORY": "Selecione uma categoria",
+            "CATEGORY_REQUIRED": "Categoria é obrigatória",
+            "DESCRIPTION": "Descrição",
+            "DESCRIPTION_MINMAX": "min: {{min}} max: {{max}}",
+            "DESCRIPTION_REQUIRED": "Descrição é obrigatória",
+            "DESCRIPTION_MINLENGTH": "A descrição deve ter no mínimo 10 caracteres",
+            "DESCRIPTION_MAXLENGTH": "A descrição deve ter no máximo 40 caracteres",
+            "OCCURRENCE_DATE": "Data da ocorrência",
+            "TOGGLE_CALENDAR": "Utilize o botão de calendário",
+            "DATE_REQUIRED": "A data é obrigatória",
+            "VALUE": "Valor",
+            "VALUE_REQUIRED": "O valor é obrigatório",
+            "BACK": "Voltar",
+            "CONFIRM": "Confirmar"
+        }
+    },
+    "MENU": {
+        "CATEGORY": "Categoria",
+        "ENTRYS": "Lançamentos"
+    },
+    "GEN": {
+        "ADD_SUCCESS": "Adicionado com sucesso",
+        "ERROR_ONADD": "Houve um erro ao adicionar",
+        "REMOVE_SUCCESS": "Removido com sucesso",
+        "ERROR_ONREMOVE": "Houve um erro ao remover",
+        "REMOVE_QUESTION": "Tem certeza que deseja remover?",
+        "CONTINUE_MESSAGE": "Para seguir com a solicitação, digite confirmar",
+        "CONFIRM": "Confirmar",
+        "CANCEL": "Cancelar",
+        "SEND_REQUEST": "Enviar solicitação"
+    }
+}

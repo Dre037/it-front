@@ -16,3 +16,8 @@
 tr:not(.header-columns):hover {
     background-color: rgba($color: map-get($mat-accent, main), $alpha: .10);
 }
+
+
+.bold {
+    font-weight: 700;
+}

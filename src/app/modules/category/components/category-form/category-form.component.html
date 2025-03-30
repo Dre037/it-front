@@ -1,13 +1,14 @@
-<h3 mat-dialog-title>Criar categoria</h3>
-<p>Escreva o nome da categoria no campo abaixo</p>
+<h3 mat-dialog-title>{{'CATEGORY.FORM.CREATE' | translate}}</h3>
+<p>{{'CATEGORY.FORM.MESSAGE' | translate}}</p>
 <mat-form-field appearance="outline">
-    <mat-label>Categoria</mat-label>
+    <mat-label>{{'CATEGORY.FORM.CATEGORY' | translate}}</mat-label>
     <input type="text" matInput [formControl]="control">
-    <mat-hint>min: 4 max: 40</mat-hint>
-    <mat-error *ngIf="control.hasError('minLength')">A categoria deve ter no mínimo 4 caracteres</mat-error>
-    <mat-error *ngIf="control.hasError('maxLength')">A categoria deve ter no máximo 40 caracteres</mat-error>
+    <mat-hint>{{'CATEGORY.FORM.CATEGORY_MINMAX' | translate : { min: 4, max: 40 } }}</mat-hint>
+    <mat-error *ngIf="control.hasError('required')">{{'CATEGORY.FORM.FIELD_REQUIRED' | translate}}</mat-error>
+    <mat-error *ngIf="control.hasError('minLength')">{{'CATEGORY.FORM.CATEGORY_MINLENGTH' | translate}}</mat-error>
+    <mat-error *ngIf="control.hasError('maxength')">{{'CATEGORY.FORM.CATEGORY_MAXLENGTH' | translate}}</mat-error>
 </mat-form-field>
 <div class="action-buttons">
-    <button mat-button color="primary" mat-dialog-close>Voltar</button>
-    <button mat-flat-button color="primary" [disabled]="control.invalid" [mat-dialog-close]="{name: control.value}">Confirmar</button>
+    <button mat-button color="primary" mat-dialog-close>{{'CATEGORY.FORM.BACK' | translate}}</button>
+    <button mat-flat-button color="primary" [disabled]="control.invalid" [mat-dialog-close]="{name: control.value}">{{'CATEGORY.FORM.CONFIRM' | translate}}</button>
 </div>

@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { Subject, takeUntil } from 'rxjs';
 
 @Component({
@@ -11,8 +12,8 @@ import { Subject, takeUntil } from 'rxjs';
 export class ConceptLayout implements OnInit, OnDestroy {
 
   public links = [
-    { icon: 'category', title: 'Categorias', subtitle: 'Lista de categorias', route: '/category' },
-    { icon: 'receipt_long', title: 'Lançamentos', subtitle: 'Lista de lançamentos', route: '/entrys'}
+    { icon: 'category', title: 'MENU.CATEGORY', route: '/category' },
+    { icon: 'receipt_long', title: 'MENU.ENTRYS', route: '/entrys'}
   ]
 
   public currentUrl!: string

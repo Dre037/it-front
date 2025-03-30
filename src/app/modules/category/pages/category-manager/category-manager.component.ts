@@ -9,6 +9,8 @@ import { select, Store } from '@ngrx/store';
 import { CategoryState } from '@category/shared/store/category.reducer';
 import * as CategoryActions from '@category/shared/store/category.actions';
 import { selectCategories } from '@category/shared/store/category.selectors';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-category-manager',
@@ -20,9 +22,11 @@ export class CategoryManagerComponent extends CommonManager<CategoryApiService, 
   constructor(
     private store: Store<{ categoryState: CategoryState }>,
     categoryApiService: CategoryApiService,
-    matDialog: MatDialog
+    matDialog: MatDialog,
+    matSnackbar: MatSnackBar,
+    translate: TranslateService
   ) {
-    super(categoryApiService, matDialog)
+    super(categoryApiService, matDialog, matSnackbar, translate)
   }
 
   ngOnInit(): void {

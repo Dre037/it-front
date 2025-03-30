@@ -1,37 +1,37 @@
-<h3 mat-dialog-title>Novo lançamento</h3>
-<p>Preencha os campos para registrar os lançamentos</p>
+<h3 mat-dialog-title>{{'ENTRYS.NEW_ENTRY' | translate}}</h3>
+<p>{{'ENTRYS.FORM.MESSAGE' | translate}}</p>
 <form [formGroup]="formGroup">
     <mat-form-field appearance="outline">
-        <mat-label>Categoria</mat-label>
-        <mat-select formControlName="idCategoria">
+        <mat-label>{{'ENTRYS.FORM.CATEGORY' | translate}}</mat-label>
+        <mat-select [aria-label]="'ENTRYS.FORM.CATEGORY' | translate" formControlName="idCategoria">
             <mat-option *ngFor="let category of categories$ | async" [value]="category.id">{{category.name}}</mat-option>
         </mat-select>
-        <mat-hint>Selecione uma categoria</mat-hint>
-        <mat-error *ngIf="formGroup.get('idCategoria').invalid">Categoria é obrigatório</mat-error>
+        <mat-hint>{{'ENTRYS.FORM.SELECT_CATEGORY' | translate}}</mat-hint>
+        <mat-error *ngIf="formGroup.get('idCategoria').invalid">{{'ENTRYS.FORM.CATEGORY_REQUIRED' | translate}}</mat-error>
     </mat-form-field>
     <mat-form-field appearance="outline">
-        <mat-label>Descrição</mat-label>
+        <mat-label>{{'ENTRYS.FORM.DESCRIPTION' | translate}}</mat-label>
         <input type="text" formControlName="description" matInput>
-        <mat-hint>min: 10 max: 40</mat-hint>
-        <mat-error *ngIf="formGroup.get('description').hasError('required')">Descrição é obrigatório</mat-error>
-        <mat-error *ngIf="formGroup.get('description').hasError('minLength')">A descrição deve ter no mínimo 10 caracteres</mat-error>
-        <mat-error *ngIf="formGroup.get('description').hasError('maxLength')">A descrição deve ter no máximo 40 caracteres</mat-error>
+        <mat-hint>{{'ENTRYS.FORM.DESCRIPTION_MINMAX' | translate: {min: 10, max: 40} }}</mat-hint>
+        <mat-error *ngIf="formGroup.get('description').hasError('required')">{{'ENTRYS.FORM.DESCRIPTION_REQUIRED' | translate}}</mat-error>
+        <mat-error *ngIf="formGroup.get('description').hasError('minLength')">{{'ENTRYS.FORM.DESCRIPTION_MINLENGTH' | translate}}</mat-error>
+        <mat-error *ngIf="formGroup.get('description').hasError('maxLength')">{{'ENTRYS.FORM.DESCRIPTION_MAXLENGTH' | translate}}</mat-error>
     </mat-form-field>
     <mat-form-field appearance="outline">
-        <mat-label>Data da ocorrência</mat-label>
+        <mat-label>{{'ENTRYS.FORM.OCCURRENCE_DATE' | translate}}</mat-label>
         <input formControlName="date" matInput [matDatepicker]="datepicker" (dateChange)="updateDate($event)">
         <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
         <mat-datepicker #datepicker></mat-datepicker>
-        <mat-hint>Utilize o botão de calendário</mat-hint>
-        <mat-error *ngIf="formGroup.get('date').hasError('required')">A data é obrigatória</mat-error>
+        <mat-hint>{{'ENTRYS.FORM.TOGGLE_CALENDAR' | translate}}</mat-hint>
+        <mat-error *ngIf="formGroup.get('date').hasError('required')">{{'ENTRYS.FORM.DATE_REQUIRED' | translate}}</mat-error>
     </mat-form-field>
     <mat-form-field appearance="outline">
-        <mat-label>Valor</mat-label>
+        <mat-label>{{'ENTRYS.FORM.VALUE' | translate}}</mat-label>
         <input formControlName="value" matInput type="number">
-        <mat-error *ngIf="formGroup.get('value').hasError('required')">O valor é obrigatório</mat-error>
+        <mat-error *ngIf="formGroup.get('value').hasError('required')">{{'ENTRYS.FORM.VALUE_REQUIRED' | translate}}</mat-error>
     </mat-form-field>
 </form>
 <div class="action-buttons">
-    <button mat-button color="primary" mat-dialog-close>Voltar</button>
-    <button mat-flat-button color="primary" [disabled]="formGroup.invalid" [mat-dialog-close]="formGroup.value">Confirmar</button>
+    <button mat-button color="primary" mat-dialog-close>{{'ENTRYS.FORM.BACK' | translate}}</button>
+    <button mat-flat-button color="primary" [disabled]="formGroup.invalid" [mat-dialog-close]="formGroup.value">{{'ENTRYS.FORM.CONFIRM' | translate}}</button>
 </div>

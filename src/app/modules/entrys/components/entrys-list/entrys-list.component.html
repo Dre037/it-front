@@ -1,33 +1,39 @@
 <table class="it-table" mat-table [dataSource]="items">
     <ng-container matColumnDef="it-description">
-        <th mat-header-cell *matHeaderCellDef class="bold">Descrição</th>
+        <th mat-header-cell *matHeaderCellDef>{{'ENTRYS.DESCRIPTION' | translate}}</th>
         <td mat-cell *matCellDef="let el">{{el.description}}</td>
+        <td mat-footer-cell *matFooterCellDef class="bold">{{'ENTRYS.TOTAL' | translate}}</td>
     </ng-container>
     <ng-container matColumnDef="it-category">
-        <th mat-header-cell *matHeaderCellDef class="bold">Categoria</th>
+        <th mat-header-cell *matHeaderCellDef>{{"ENTRYS.CATEGORY" | translate}}</th>
         <td mat-cell *matCellDef="let el">{{el.category}}</td>
+        <td mat-footer-cell *matFooterCellDef></td>
     </ng-container>
     <ng-container matColumnDef="it-date">
-        <th mat-header-cell *matHeaderCellDef class="bold">Data</th>
+        <th mat-header-cell *matHeaderCellDef>{{'ENTRYS.DATE' | translate}}</th>
         <td mat-cell *matCellDef="let el">{{el.date}}</td>
+        <td mat-footer-cell *matFooterCellDef></td>
     </ng-container>
     <ng-container matColumnDef="it-value">
-        <th mat-header-cell *matHeaderCellDef class="bold">Valor</th>
-        <td mat-cell *matCellDef="let el">{{el.value | currency:'BRL':'symbol-narrow'}}</td>
+        <th mat-header-cell *matHeaderCellDef>{{'ENTRYS.VALUE' | translate}}</th>
+        <td mat-cell *matCellDef="let el">{{el.value}}</td>
+        <td mat-footer-cell *matFooterCellDef class="bold">{{totalCount}}</td>
     </ng-container>
     <ng-container matColumnDef="it-actions">
-        <th mat-header-cell *matHeaderCellDef class="bold">Ações</th>
+        <th mat-header-cell *matHeaderCellDef></th>
         <td mat-cell *matCellDef="let el">
             <button mat-icon-button color="warn" (click)="deleteEvent(el)">
                 <mat-icon>clear</mat-icon>
             </button>
         </td>
+        <td mat-footer-cell *matFooterCellDef></td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns" class="header-columns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns; let i = index"></tr>
+    <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
     <tr class="mat-row" *matNoDataRow>
         <td colspan="5" class="mat-cell">
-            <span>Nenhum lançamento registrado</span>
+            <span>{{'ENTRYS.EMPTY' | translate}}</span>
         </td>
     </tr>
 </table>

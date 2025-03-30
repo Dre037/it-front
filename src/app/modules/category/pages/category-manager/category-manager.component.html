@@ -1,8 +1,8 @@
 <div class="category">
-    <h3>Gerenciador de categorias</h3>
+    <h3>{{'CATEGORY.MANAGER' | translate}}</h3>
     <button mat-button color="primary" (click)="open()">
         <mat-icon>add</mat-icon>
-        <span class="ml-1">Nova categoria</span>
+        <span class="ml-1">{{'CATEGORY.NEW_CATEGORY' | translate}}</span>
     </button>
 </div>
 <category-list [items]="(items$ | async) ?? []" (remove)="removeCategory($event)"></category-list>
