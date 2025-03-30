@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpApiService } from 'src/app/core/services/http-api.service';
-import { Category } from '../interfaces/category';
+import { HttpApiService } from '@core/services/http-api.service';
+import { Category } from '@category/shared/interfaces/category';
 
 @Injectable({
   providedIn: 'root'

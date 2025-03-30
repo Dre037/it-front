@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject, filter, map, mergeMap, switchMap, take } from 'rxjs';
-import { Entrys } from '../../shared/interfaces/entrys';
-import { EntrysApiService } from '../../shared/services/entrys-api.service';
+import { Entrys } from '@entrys/shared/interfaces/entrys';
+import { EntrysApiService } from '@entrys/shared/services/entrys-api.service';
 import { MatDialog } from '@angular/material/dialog';
-import { EntrysFormComponent } from '../../components/entrys-form/entrys-form.component';
-import { CommonManager } from 'src/app/core/common/common-manager';
+import { EntrysFormComponent } from '@entrys/components/entrys-form/entrys-form.component';
+import { CommonManager } from '@core/common/common-manager';
 import { select, Store } from '@ngrx/store';
-import { CategoryState } from 'src/app/modules/category/shared/store/category.reducer';
-import { selectCategories } from 'src/app/modules/category/shared/store/category.selectors';
+import { CategoryState } from '@category/shared/store/category.reducer';
+import { selectCategories } from '@category/shared/store/category.selectors';
 
 @Component({
   selector: 'app-entrys-manager',
