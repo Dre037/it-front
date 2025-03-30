@@ -1,0 +1,13 @@
+<h3 mat-dialog-title>Criar categoria</h3>
+<p>Escreva o nome da categoria no campo abaixo</p>
+<mat-form-field appearance="outline">
+    <mat-label>Categoria</mat-label>
+    <input type="text" matInput [formControl]="control">
+    <mat-hint>min: 4 max: 40</mat-hint>
+    <mat-error *ngIf="control.hasError('minLength')">A categoria deve ter no mínimo 4 caracteres</mat-error>
+    <mat-error *ngIf="control.hasError('maxLength')">A categoria deve ter no máximo 40 caracteres</mat-error>
+</mat-form-field>
+<div>
+    <button mat-button color="primary" mat-dialog-close>Voltar</button>
+    <button mat-flat-button color="primary" [disabled]="control.invalid" [mat-dialog-close]="{name: control.value}">Confirmar</button>
+</div>

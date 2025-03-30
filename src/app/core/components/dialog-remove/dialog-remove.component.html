@@ -1,0 +1,10 @@
+<h3 mat-dialog-title>Tem certeza que deseja remover?</h3>
+<p>Para seguir com a solicitação, digite confirmar</p>
+<mat-form-field appearance="outline">
+    <mat-label>Confirmar</mat-label>
+    <input type="text" matInput [formControl]="control">
+</mat-form-field>
+<div>
+    <button mat-button color="primary" mat-dialog-close>Cancelar</button>
+    <button mat-flat-button color="primary" [disabled]="control.invalid" [mat-dialog-close]="true">Enviar solicitação</button>
+</div>

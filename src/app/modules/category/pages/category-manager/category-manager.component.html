@@ -1,0 +1,10 @@
+<div>
+    <h3>Gerenciador de categorias</h3>
+    <button mat-button color="primary" (click)="open()">
+        <mat-icon>add</mat-icon>
+        <span class="ml-1">Nova categoria</span>
+    </button>
+</div>
+<mat-card>
+    <category-list [items]="(items$ | async) ?? []" (remove)="removeCategory($event)"></category-list>
+</mat-card>

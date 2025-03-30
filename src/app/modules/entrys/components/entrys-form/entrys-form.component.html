@@ -1,0 +1,36 @@
+<h3 mat-dialog-title>Novo lançamento</h3>
+<p>Preencha os campos para registrar os lançamentos</p>
+<form [formGroup]="formGroup">
+    <mat-form-field appearance="outline">
+        <mat-label>Categoria</mat-label>
+        <mat-select formControlName="idCategoria">
+            <mat-option *ngFor="let category of [1]" [value]="category">{{category}}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="formGroup.get('idCategoria').invalid">Categoria é obrigatório</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Descrição</mat-label>
+        <input type="text" formControlName="description" matInput>
+        <mat-hint>min: 10 max: 40</mat-hint>
+        <mat-error *ngIf="formGroup.get('description').hasError('required')">Descrição é obrigatório</mat-error>
+        <mat-error *ngIf="formGroup.get('description').hasError('minLength')">A descrição deve ter no mínimo 10 caracteres</mat-error>
+        <mat-error *ngIf="formGroup.get('description').hasError('maxLength')">A descrição deve ter no máximo 40 caracteres</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Data da ocorrência</mat-label>
+        <input formControlName="date" matInput [matDatepicker]="datepicker" (dateChange)="updateDate($event)">
+        <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+        <mat-datepicker #datepicker></mat-datepicker>
+        <mat-hint>Utilize o botão de calendário</mat-hint>
+        <mat-error *ngIf="formGroup.get('date').hasError('required')">A data é obrigatória</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Valor</mat-label>
+        <input formControlName="value" matInput type="text">
+        <mat-error *ngIf="formGroup.get('value').hasError('required')">O valor é obrigatório</mat-error>
+    </mat-form-field>
+</form>
+<div>
+    <button mat-button color="primary" mat-dialog-close>Voltar</button>
+    <button mat-flat-button color="primary" [disabled]="formGroup.invalid" [mat-dialog-close]="formGroup.value">Confirmar</button>
+</div>

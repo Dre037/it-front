@@ -1,0 +1,17 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+        <h3>It Front</h3>
+        <mat-nav-list>
+            <ng-container *ngFor="let link of links">
+                <a mat-list-item [routerLink]="link.route">
+                    <mat-icon mat-list-icon>{{link.icon}}</mat-icon>
+                    <div mat-line>{{link.title}}</div>
+                    <div mat-line>{{link.subtitle}}</div>
+                </a>
+            </ng-container>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
