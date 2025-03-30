@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Category } from '../../shared/interfaces/category';
+import { Category } from '@category/shared/interfaces/category';
 
 @Component({
   selector: 'category-list',

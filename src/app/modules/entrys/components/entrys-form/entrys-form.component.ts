@@ -3,9 +3,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { Category } from 'src/app/modules/category/shared/interfaces/category';
-import { CategoryState } from 'src/app/modules/category/shared/store/category.reducer';
-import { selectCategories } from 'src/app/modules/category/shared/store/category.selectors';
+import { Category } from '@category/shared/interfaces/category';
+import { CategoryState } from '@category/shared/store/category.reducer';
+import { selectCategories } from '@category/shared/store/category.selectors';
 
 @Component({
   selector: 'app-entrys-form',
