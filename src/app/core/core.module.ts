@@ -6,6 +6,7 @@ import { MatInputModule } from "@angular/material/input";
 import { MatButtonModule } from "@angular/material/button";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatDialogModule } from "@angular/material/dialog";
+import { TranslateModule } from "@ngx-translate/core";
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { MatDialogModule } from "@angular/material/dialog";
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
+        TranslateModule,
         MatDialogModule,
         MatFormFieldModule,
         MatInputModule,

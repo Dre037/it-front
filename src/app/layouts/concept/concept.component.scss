@@ -1,3 +1,45 @@
+@import '../../../theme/material-theme.scss';
+
 mat-sidenav-container {
-    height: 100%;
+    height: calc(100% - 64px);
+
+    .mat-list-base .mat-list-item.selected {
+        color: map-get($map: $mat-primary, $key: main);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    height: calc(100vh - 128px);
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bolder;
+    line-height: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    color: map-get($mat-primary, main);
+}
+
+.toolbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+        color: $light-text;
+    }
+
+    mat-icon {
+        color: $light-text;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 16px;
+    }
 }

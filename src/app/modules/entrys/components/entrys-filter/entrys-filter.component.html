@@ -1,0 +1,21 @@
+<form [formGroup]="filterForm">
+    <mat-form-field appearance="outline">
+        <mat-label>{{'ENTRYS.FORM.DESCRIPTION' | translate}}</mat-label>
+        <input type="text" formControlName="description" matInput>
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>{{'ENTRYS.FORM.CATEGORY' | translate}}</mat-label>
+        <mat-select formControlName="categories" multiple>
+            <mat-select-trigger>
+                <ng-container *ngIf="filterForm.get('categories').value as categories">
+                    {{categories ? categories[0]?.name : ''}}
+                    <span *ngIf="categories.length > 1">
+                        (+{{categories.length - 1}} {{(categories.length == 2 ? 'ENTRYS.OTHER' : 'ENTRYS.OTHERS')| translate}})
+                    </span>
+                </ng-container>
+            </mat-select-trigger>
+            <mat-option *ngFor="let category of categories$ | async" [value]="category">{{category.name}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</form>

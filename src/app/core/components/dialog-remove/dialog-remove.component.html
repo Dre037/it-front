@@ -1,10 +1,10 @@
-<h3 mat-dialog-title>Tem certeza que deseja remover?</h3>
-<p>Para seguir com a solicitação, digite confirmar</p>
+<h3 mat-dialog-title>{{'GEN.REMOVE_QUESTION' | translate}}</h3>
+<p>{{'GEN.CONTINUE_MESSAGE' | translate}}</p>
 <mat-form-field appearance="outline">
-    <mat-label>Confirmar</mat-label>
+    <mat-label>{{'GEN.CONFIRM' | translate}}</mat-label>
     <input type="text" matInput [formControl]="control">
 </mat-form-field>
-<div>
-    <button mat-button color="primary" mat-dialog-close>Cancelar</button>
-    <button mat-flat-button color="primary" [disabled]="control.invalid" [mat-dialog-close]="true">Enviar solicitação</button>
+<div class="action-buttons">
+    <button mat-button color="primary" mat-dialog-close>{{'GEN.CANCEL' | translate}}</button>
+    <button mat-flat-button color="primary" [disabled]="control.invalid" [mat-dialog-close]="true">{{'GEN.SEND_REQUEST' | translate}}</button>
 </div>

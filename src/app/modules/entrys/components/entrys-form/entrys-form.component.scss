@@ -1,0 +1,28 @@
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    mat-form-field {
+        width: 100%;
+        
+        &:not(:first-child) {
+            margin-top: 16px;
+        }
+    }
+}
+
+.action-buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    button:first-child {
+        margin-right: 0.5rem;
+    }
+}

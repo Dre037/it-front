@@ -43,7 +43,7 @@ export class HttpApiService {
     const httpConfig = Object.assign(config, { headers: {} })
     const url = this.parseUri(path)
 
-    return this.http.request(method, url, httpConfig).pipe(catchError(error => this.handleError(error)))
+    return this.http.request(method, url, httpConfig).pipe(retry(2), catchError(error => this.handleError(error)))
   }
 
   protected parseUri(uri: string) {

@@ -19,6 +19,9 @@ import { StoreModule } from '@ngrx/store';
 import * as CategoryReducer from './shared/store/category.reducer'
 import { EffectsModule } from '@ngrx/effects';
 import { CategoryEffects } from './shared/store/category.effects';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatChipsModule } from '@angular/material/chips';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,7 @@ import { CategoryEffects } from './shared/store/category.effects';
     RouterModule.forChild(routes),
     StoreModule.forFeature(CategoryReducer.CategoryFeatureKey, CategoryReducer.reducer),
     EffectsModule.forFeature([CategoryEffects]),
+    TranslateModule,
     MatTableModule,
     MatIconModule,
     MatButtonModule,
@@ -40,7 +44,9 @@ import { CategoryEffects } from './shared/store/category.effects';
     MatDividerModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatChipsModule,
+    MatSnackBarModule
   ],
   providers: [
     CdkColumnDef

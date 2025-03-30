@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpApiService } from '@core/services/http-api.service';
 import { Category } from '@category/shared/interfaces/category';
+import { CommonService } from '@core/interfaces/common-service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CategoryApiService {
+export class CategoryApiService implements CommonService<Category> {
 
   constructor(
     private httpApiService: HttpApiService

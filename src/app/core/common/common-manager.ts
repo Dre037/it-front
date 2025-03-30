@@ -1,20 +1,20 @@
 import { MatDialog } from "@angular/material/dialog";
+import { MatSnackBar } from "@angular/material/snack-bar";
 import { BehaviorSubject, filter, Observable, switchMap, take } from "rxjs";
 import { DialogRemoveComponent } from "@core/components/dialog-remove/dialog-remove.component";
+import { CommonService } from "@core/interfaces/common-service";
+import { TranslateService } from "@ngx-translate/core";
 
-interface CommonService {
-    create: (payload: any) => Observable<any>
-    list: () => Observable<any>
-    detail: (id: any) => Observable<any>
-    remove: (id: any) => Observable<any>
-}
-
-export class CommonManager<S extends CommonService, T> {
+export class CommonManager<S extends CommonService<T>, T> {
 
     public itemsSubj = new BehaviorSubject<T[]>([])
     public items$ = this.itemsSubj.asObservable()
 
-    constructor(private service: S, private matDialog: MatDialog) {
+    constructor(
+        private service: S, 
+        private matDialog: MatDialog, 
+        private matSnackbar: MatSnackBar,
+        private translateService: TranslateService) {
 
     }
 
@@ -26,19 +26,34 @@ export class CommonManager<S extends CommonService, T> {
         })
     }
 
-    public openDialog(component: any) {
+    public openDialog(component: any, setRef = false) {
         const dialog = this.matDialog.open(component, {
             position: {
                 top: '24px'
-            }
+            },
+            autoFocus: false
         })
+
+        if (setRef) {
+            dialog.afterOpened().pipe(
+                take(1)
+            ).subscribe(() => {
+                dialog.componentInstance['dialogRef'] = dialog
+            })
+        }
 
         dialog.afterClosed().pipe(
             filter(f => f && true),
             switchMap(payload => this.service.create(payload)),
             take(1)
-        ).subscribe(() => {
-            this.load()
+        ).subscribe({
+            next:() => {
+                this.load()
+                this.sendMessage(this.translateService.instant('GEN.ADD_SUCCESS'), 'success')
+            },
+            error: (err) => {
+                this.sendMessage(this.translateService.instant('GEN.ERROR_ONADD'), 'failure')
+            },
         })
     }
 
@@ -47,15 +62,30 @@ export class CommonManager<S extends CommonService, T> {
             position: {
                 top: '24px'
             },
-            data: this.service.detail(id)
+            autoFocus: false
         })
 
         dialog.afterClosed().pipe(
             filter(f => f && true),
             switchMap(() => this.service.remove(id)),
             take(1)
-        ).subscribe(() => {
-            this.load()
+        ).subscribe({
+            next: () => {
+                this.load()
+                this.sendMessage(this.translateService.instant('GEN.REMOVE_SUCCESS'), 'success')
+            },
+            error: (err) => {
+                this.sendMessage(this.translateService.instant('GEN.ERROR_ONREMOVE'), 'failure')
+            }
+        })
+    }
+
+    protected sendMessage(message: string, panelClass: string) {
+        this.matSnackbar.open(message, '', {
+            duration: 3000,
+            verticalPosition: 'top',
+            horizontalPosition: 'right',
+            panelClass
         })
     }
 }
