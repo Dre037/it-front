@@ -50,7 +50,7 @@ export class HttpApiService {
     return `${environment.API_BASE_URL}/${uri}`
   }
 
-  protected handleError(error: HttpErrorResponse): Observable<string> {
-    return throwError(() => { new Error(error.message) })
+  protected handleError(error: HttpErrorResponse): Observable<never> {
+    return throwError(() => new Error(error.message))
   }
 }

@@ -1,434 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="13" failures="10" errors="0" time="23.613">
-  <testsuite name="CategoryFormComponent" errors="0" failures="1" skipped="0" timestamp="2025-03-30T19:15:41" time="8.414" tests="1">
-    <testcase classname="CategoryFormComponent should create" name="CategoryFormComponent should create" time="0.134">
-      <failure>Error: NG0302: The pipe &apos;translate&apos; could not be found in the &apos;CategoryFormComponent&apos; component!. Find more at https://angular.io/errors/NG0302
-    at getPipeDef (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:22456:15)
-    at ɵɵpipe (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:22408:19)
-    at CategoryFormComponent_Template (ng:///CategoryFormComponent.js:55:9)
-    at executeTemplate (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:9731:9)
-    at renderView (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:9531:13)
-    at renderComponent$1 (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:10838:5)
-    at renderChildComponents (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:9396:9)
-    at renderView (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:9556:13)
-    at ComponentFactory.create (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21753:13)
-    at initComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1771:51)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Object.onInvoke (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25719:33)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at NgZone.run (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25573:28)
-    at TestBedRender3.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1774:41)
-    at Function.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1615:37)
-    at C:\Projetos\it-case\it-front\src\app\modules\category\components\category-form\category-form.component.spec.ts:17:23
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at Object.wrappedFunc (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4330:34)
-    at Promise.then.completed (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:333:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:259:10)
-    at _callCircusHook (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:240:40)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at _runTest (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:202:5)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:97:9)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:91:9)
-    at run (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:31:3)
-    at runAndTransformResultsToJestFormat (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:135:21)</failure>
-    </testcase>
-  </testsuite>
-  <testsuite name="CategoryListComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-30T19:15:41" time="9.091" tests="1">
-    <testcase classname="CategoryListComponent should create" name="CategoryListComponent should create" time="0.205">
-    </testcase>
-  </testsuite>
-  <testsuite name="EntrysListComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-30T19:15:41" time="9.115" tests="1">
-    <testcase classname="EntrysListComponent should create" name="EntrysListComponent should create" time="0.219">
-    </testcase>
-  </testsuite>
-  <testsuite name="HttpApiService" errors="0" failures="1" skipped="0" timestamp="2025-03-30T19:15:41" time="9.271" tests="1">
+<testsuites name="jest tests" tests="54" failures="0" errors="0" time="7.092">
+  <testsuite name="HttpApiService" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.216" tests="6">
     <testcase classname="HttpApiService should be created" name="HttpApiService should be created" time="0.025">
-      <failure>NullInjectorError: R3InjectorError(DynamicTestModule)[HttpApiService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11256:27)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at injectInjectorOnly (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:4795:33)
-    at ɵɵinject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:4799:42)
-    at Object.HttpApiService_Factory [as factory] (ng:///HttpApiService/ɵfac.js:5:42)
-    at R3Injector.hydrate (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11593:35)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11412:33)
-    at NgModuleRef.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21986:33)
-    at TestBedRender3.inject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1717:52)
-    at Function.inject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1608:37)
-    at C:\Projetos\it-case\it-front\src\app\core\services\http-api.service.spec.ts:10:23
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at Object.wrappedFunc (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4330:34)
-    at Promise.then.completed (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:333:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:259:10)
-    at _callCircusHook (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:240:40)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at _runTest (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:202:5)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:97:9)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:91:9)
-    at run (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:31:3)
-    at runAndTransformResultsToJestFormat (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:135:21)</failure>
+    </testcase>
+    <testcase classname="HttpApiService should perform a GET request" name="HttpApiService should perform a GET request" time="0.007">
+    </testcase>
+    <testcase classname="HttpApiService should perform a POST request" name="HttpApiService should perform a POST request" time="0.004">
+    </testcase>
+    <testcase classname="HttpApiService should perform a PUT request" name="HttpApiService should perform a PUT request" time="0.004">
+    </testcase>
+    <testcase classname="HttpApiService should perform a DELETE request" name="HttpApiService should perform a DELETE request" time="0.003">
+    </testcase>
+    <testcase classname="HttpApiService should handle errors correctly" name="HttpApiService should handle errors correctly" time="0.005">
     </testcase>
   </testsuite>
-  <testsuite name="CategoryApiService" errors="0" failures="1" skipped="0" timestamp="2025-03-30T19:15:41" time="9.271" tests="1">
-    <testcase classname="CategoryApiService should be created" name="CategoryApiService should be created" time="0.026">
-      <failure>NullInjectorError: R3InjectorError(DynamicTestModule)[CategoryApiService -&gt; HttpApiService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11256:27)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at injectInjectorOnly (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:4795:33)
-    at ɵɵinject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:4799:42)
-    at Object.HttpApiService_Factory [as factory] (ng:///HttpApiService/ɵfac.js:5:42)
-    at R3Injector.hydrate (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11593:35)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11412:33)
-    at injectInjectorOnly (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:4795:33)
-    at ɵɵinject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:4799:42)
-    at Object.CategoryApiService_Factory [as factory] (ng:///CategoryApiService/ɵfac.js:5:46)
-    at R3Injector.hydrate (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11593:35)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11412:33)
-    at NgModuleRef.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21986:33)
-    at TestBedRender3.inject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1717:52)
-    at Function.inject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1608:37)
-    at C:\Projetos\it-case\it-front\src\app\modules\category\shared\services\category-api.service.spec.ts:10:23
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at Object.wrappedFunc (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4330:34)
-    at Promise.then.completed (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:333:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:259:10)
-    at _callCircusHook (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:240:40)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at _runTest (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:202:5)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:97:9)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:91:9)
-    at run (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:31:3)
-    at runAndTransformResultsToJestFormat (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:135:21)</failure>
+  <testsuite name="CategoryApiService" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.238" tests="5">
+    <testcase classname="CategoryApiService should be created" name="CategoryApiService should be created" time="0.027">
+    </testcase>
+    <testcase classname="CategoryApiService create should call post with parameters" name="CategoryApiService create should call post with parameters" time="0.007">
+    </testcase>
+    <testcase classname="CategoryApiService list should call get and return list of categories" name="CategoryApiService list should call get and return list of categories" time="0.003">
+    </testcase>
+    <testcase classname="CategoryApiService detail should call get and return detail of unique category" name="CategoryApiService detail should call get and return detail of unique category" time="0.003">
+    </testcase>
+    <testcase classname="CategoryApiService remove should call delete with correct id" name="CategoryApiService remove should call delete with correct id" time="0.003">
     </testcase>
   </testsuite>
-  <testsuite name="EntrysApiService" errors="0" failures="1" skipped="0" timestamp="2025-03-30T19:15:41" time="9.274" tests="1">
-    <testcase classname="EntrysApiService should be created" name="EntrysApiService should be created" time="0.026">
-      <failure>NullInjectorError: R3InjectorError(DynamicTestModule)[EntrysApiService -&gt; HttpApiService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11256:27)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at injectInjectorOnly (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:4795:33)
-    at ɵɵinject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:4799:42)
-    at Object.HttpApiService_Factory [as factory] (ng:///HttpApiService/ɵfac.js:5:42)
-    at R3Injector.hydrate (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11593:35)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11412:33)
-    at injectInjectorOnly (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:4795:33)
-    at ɵɵinject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:4799:42)
-    at Object.EntrysApiService_Factory [as factory] (ng:///EntrysApiService/ɵfac.js:5:44)
-    at R3Injector.hydrate (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11593:35)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11412:33)
-    at NgModuleRef.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21986:33)
-    at TestBedRender3.inject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1717:52)
-    at Function.inject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1608:37)
-    at C:\Projetos\it-case\it-front\src\app\modules\entrys\shared\services\entrys-api.service.spec.ts:10:23
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at Object.wrappedFunc (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4330:34)
-    at Promise.then.completed (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:333:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:259:10)
-    at _callCircusHook (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:240:40)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at _runTest (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:202:5)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:97:9)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:91:9)
-    at run (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:31:3)
-    at runAndTransformResultsToJestFormat (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:135:21)</failure>
+  <testsuite name="EntrysApiService" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.338" tests="5">
+    <testcase classname="EntrysApiService should be created" name="EntrysApiService should be created" time="0.027">
+    </testcase>
+    <testcase classname="EntrysApiService create should call post with parameters" name="EntrysApiService create should call post with parameters" time="0.006">
+    </testcase>
+    <testcase classname="EntrysApiService list should call get and return list of entrys" name="EntrysApiService list should call get and return list of entrys" time="0.004">
+    </testcase>
+    <testcase classname="EntrysApiService detail should call get and return detail of unique entrys" name="EntrysApiService detail should call get and return detail of unique entrys" time="0.003">
+    </testcase>
+    <testcase classname="EntrysApiService remove should call delete with correct id" name="EntrysApiService remove should call delete with correct id" time="0.003">
     </testcase>
   </testsuite>
-  <testsuite name="ConceptComponent" errors="0" failures="1" skipped="0" timestamp="2025-03-30T19:15:41" time="9.347" tests="1">
-    <testcase classname="ConceptComponent should create" name="ConceptComponent should create" time="0.076">
-      <failure>NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -&gt; ActivatedRoute]: 
-  NullInjectorError: No provider for ActivatedRoute!
-    at NullInjector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11256:27)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at NgModuleRef.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21986:33)
-    at Object.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21663:35)
-    at lookupTokenUsingModuleInjector (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3374:39)
-    at getOrCreateInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3486:12)
-    at ɵɵdirectiveInject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:14531:12)
-    at NodeInjectorFactory.ConceptLayout_Factory [as factory] (ng:///ConceptLayout/ɵfac.js:5:41)
-    at getNodeInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3581:44)
-    at instantiateRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:10292:23)
-    at createRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:12395:23)
-    at ComponentFactory.create (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21752:25)
-    at initComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1771:51)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Object.onInvoke (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25719:33)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at NgZone.run (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25573:28)
-    at TestBedRender3.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1774:41)
-    at Function.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1615:37)
-    at C:\Projetos\it-case\it-front\src\app\layouts\concept\concept.component.spec.ts:17:23
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at Object.wrappedFunc (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4330:34)
-    at Promise.then.completed (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:333:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:259:10)
-    at _callCircusHook (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:240:40)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at _runTest (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:202:5)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:97:9)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:91:9)
-    at run (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:31:3)
-    at runAndTransformResultsToJestFormat (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:135:21)</failure>
+  <testsuite name="ConceptComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.339" tests="5">
+    <testcase classname="ConceptComponent should create" name="ConceptComponent should create" time="0.097">
+    </testcase>
+    <testcase classname="ConceptComponent should initialize with dark theme if localStorage has dark theme" name="ConceptComponent should initialize with dark theme if localStorage has dark theme" time="0.02">
+    </testcase>
+    <testcase classname="ConceptComponent should subscribe to route changes and update currentUrl" name="ConceptComponent should subscribe to route changes and update currentUrl" time="0.011">
+    </testcase>
+    <testcase classname="ConceptComponent should unsubscribe$ completed" name="ConceptComponent should unsubscribe$ completed" time="0.02">
+    </testcase>
+    <testcase classname="ConceptComponent setulLight should remove dark-theme class and set light theme in localStorage" name="ConceptComponent setulLight should remove dark-theme class and set light theme in localStorage" time="0.013">
     </testcase>
   </testsuite>
-  <testsuite name="DialogRemoveComponent" errors="0" failures="1" skipped="0" timestamp="2025-03-30T19:15:41" time="9.447" tests="1">
-    <testcase classname="DialogRemoveComponent should create" name="DialogRemoveComponent should create" time="0.047">
-      <failure>NullInjectorError: R3InjectorError(DynamicTestModule)[TranslateService -&gt; TranslateService]: 
-  NullInjectorError: No provider for TranslateService!
-    at NullInjector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11256:27)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at NgModuleRef.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21986:33)
-    at Object.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21663:35)
-    at lookupTokenUsingModuleInjector (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3374:39)
-    at getOrCreateInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3486:12)
-    at ɵɵdirectiveInject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:14531:12)
-    at NodeInjectorFactory.DialogRemoveComponent_Factory [as factory] (ng:///DialogRemoveComponent/ɵfac.js:5:49)
-    at getNodeInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3581:44)
-    at instantiateRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:10292:23)
-    at createRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:12395:23)
-    at ComponentFactory.create (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21752:25)
-    at initComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1771:51)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Object.onInvoke (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25719:33)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at NgZone.run (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25573:28)
-    at TestBedRender3.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1774:41)
-    at Function.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1615:37)
-    at C:\Projetos\it-case\it-front\src\app\core\components\dialog-remove\dialog-remove.component.spec.ts:17:23
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at Object.wrappedFunc (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4330:34)
-    at Promise.then.completed (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:333:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:259:10)
-    at _callCircusHook (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:240:40)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at _runTest (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:202:5)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:97:9)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:91:9)
-    at run (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:31:3)
-    at runAndTransformResultsToJestFormat (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:135:21)</failure>
+  <testsuite name="DialogRemoveComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.496" tests="3">
+    <testcase classname="DialogRemoveComponent should create" name="DialogRemoveComponent should create" time="0.062">
+    </testcase>
+    <testcase classname="DialogRemoveComponent check control is invalid" name="DialogRemoveComponent check control is invalid" time="0.014">
+    </testcase>
+    <testcase classname="DialogRemoveComponent check control valid" name="DialogRemoveComponent check control valid" time="0.018">
     </testcase>
   </testsuite>
-  <testsuite name="EntrysFilterComponent" errors="0" failures="1" skipped="0" timestamp="2025-03-30T19:15:41" time="9.566" tests="1">
-    <testcase classname="EntrysFilterComponent should create" name="EntrysFilterComponent should create" time="0.062">
-      <failure>NullInjectorError: R3InjectorError(DynamicTestModule)[Store -&gt; Store]: 
-  NullInjectorError: No provider for Store!
-    at NullInjector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11256:27)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at NgModuleRef.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21986:33)
-    at Object.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21663:35)
-    at lookupTokenUsingModuleInjector (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3374:39)
-    at getOrCreateInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3486:12)
-    at ɵɵdirectiveInject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:14531:12)
-    at NodeInjectorFactory.EntrysFilterComponent_Factory [as factory] (ng:///EntrysFilterComponent/ɵfac.js:5:49)
-    at getNodeInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3581:44)
-    at instantiateRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:10292:23)
-    at createRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:12395:23)
-    at ComponentFactory.create (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21752:25)
-    at initComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1771:51)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Object.onInvoke (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25719:33)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at NgZone.run (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25573:28)
-    at TestBedRender3.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1774:41)
-    at Function.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1615:37)
-    at C:\Projetos\it-case\it-front\src\app\modules\entrys\components\entrys-filter\entrys-filter.component.spec.ts:17:23
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at Object.wrappedFunc (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4330:34)
-    at Promise.then.completed (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:333:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:259:10)
-    at _callCircusHook (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:240:40)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at _runTest (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:202:5)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:97:9)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:91:9)
-    at run (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:31:3)
-    at runAndTransformResultsToJestFormat (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:135:21)</failure>
+  <testsuite name="CategoryManagerComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.534" tests="4">
+    <testcase classname="CategoryManagerComponent should create" name="CategoryManagerComponent should create" time="0.051">
+    </testcase>
+    <testcase classname="CategoryManagerComponent dispatch fetchCategories on load component" name="CategoryManagerComponent dispatch fetchCategories on load component" time="0.014">
+    </testcase>
+    <testcase classname="CategoryManagerComponent check dialog opened after trigger open method" name="CategoryManagerComponent check dialog opened after trigger open method" time="0.011">
+    </testcase>
+    <testcase classname="CategoryManagerComponent check action remove is fired after trigger removeCategory" name="CategoryManagerComponent check action remove is fired after trigger removeCategory" time="0.008">
     </testcase>
   </testsuite>
-  <testsuite name="AppComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-30T19:15:41" time="9.744" tests="1">
-    <testcase classname="AppComponent should create the app" name="AppComponent should create the app" time="0.035">
+  <testsuite name="CategoryFormComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.547" tests="3">
+    <testcase classname="CategoryFormComponent should create" name="CategoryFormComponent should create" time="0.071">
+    </testcase>
+    <testcase classname="CategoryFormComponent init form correctaly" name="CategoryFormComponent init form correctaly" time="0.024">
+    </testcase>
+    <testcase classname="CategoryFormComponent check field is valid" name="CategoryFormComponent check field is valid" time="0.017">
     </testcase>
   </testsuite>
-  <testsuite name="EntrysFormComponent" errors="0" failures="1" skipped="0" timestamp="2025-03-30T19:15:41" time="10.374" tests="1">
-    <testcase classname="EntrysFormComponent should create" name="EntrysFormComponent should create" time="0.038">
-      <failure>NullInjectorError: R3InjectorError(DynamicTestModule)[Store -&gt; Store]: 
-  NullInjectorError: No provider for Store!
-    at NullInjector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11256:27)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at NgModuleRef.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21986:33)
-    at Object.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21663:35)
-    at lookupTokenUsingModuleInjector (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3374:39)
-    at getOrCreateInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3486:12)
-    at ɵɵdirectiveInject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:14531:12)
-    at NodeInjectorFactory.EntrysFormComponent_Factory [as factory] (ng:///EntrysFormComponent/ɵfac.js:5:47)
-    at getNodeInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3581:44)
-    at instantiateRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:10292:23)
-    at createRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:12395:23)
-    at ComponentFactory.create (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21752:25)
-    at initComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1771:51)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Object.onInvoke (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25719:33)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at NgZone.run (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25573:28)
-    at TestBedRender3.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1774:41)
-    at Function.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1615:37)
-    at C:\Projetos\it-case\it-front\src\app\modules\entrys\components\entrys-form\entrys-form.component.spec.ts:17:23
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at Object.wrappedFunc (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4330:34)
-    at Promise.then.completed (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:333:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:259:10)
-    at _callCircusHook (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:240:40)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at _runTest (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:202:5)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:97:9)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:91:9)
-    at run (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:31:3)
-    at runAndTransformResultsToJestFormat (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:135:21)</failure>
+  <testsuite name="EntrysListComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.6" tests="3">
+    <testcase classname="EntrysListComponent should create" name="EntrysListComponent should create" time="0.106">
+    </testcase>
+    <testcase classname="EntrysListComponent compute totalCount correctly" name="EntrysListComponent compute totalCount correctly" time="0.037">
+    </testcase>
+    <testcase classname="EntrysListComponent emit remove action when deleteEvent is called" name="EntrysListComponent emit remove action when deleteEvent is called" time="0.03">
     </testcase>
   </testsuite>
-  <testsuite name="CategoryManagerComponent" errors="0" failures="1" skipped="0" timestamp="2025-03-30T19:15:41" time="11.587" tests="1">
-    <testcase classname="CategoryManagerComponent should create" name="CategoryManagerComponent should create" time="0.026">
-      <failure>NullInjectorError: R3InjectorError(DynamicTestModule)[Store -&gt; Store]: 
-  NullInjectorError: No provider for Store!
-    at NullInjector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11256:27)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at NgModuleRef.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21986:33)
-    at Object.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21663:35)
-    at lookupTokenUsingModuleInjector (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3374:39)
-    at getOrCreateInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3486:12)
-    at ɵɵdirectiveInject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:14531:12)
-    at NodeInjectorFactory.CategoryManagerComponent_Factory [as factory] (ng:///CategoryManagerComponent/ɵfac.js:5:52)
-    at getNodeInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3581:44)
-    at instantiateRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:10292:23)
-    at createRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:12395:23)
-    at ComponentFactory.create (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21752:25)
-    at initComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1771:51)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Object.onInvoke (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25719:33)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at NgZone.run (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25573:28)
-    at TestBedRender3.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1774:41)
-    at Function.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1615:37)
-    at C:\Projetos\it-case\it-front\src\app\modules\category\pages\category-manager\category-manager.component.spec.ts:17:23
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at Object.wrappedFunc (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4330:34)
-    at Promise.then.completed (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:333:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:259:10)
-    at _callCircusHook (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:240:40)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at _runTest (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:202:5)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:97:9)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:91:9)
-    at run (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:31:3)
-    at runAndTransformResultsToJestFormat (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:135:21)</failure>
+  <testsuite name="CategoryListComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.627" tests="3">
+    <testcase classname="CategoryListComponent should create" name="CategoryListComponent should create" time="0.075">
+    </testcase>
+    <testcase classname="CategoryListComponent registry chips correctaly" name="CategoryListComponent registry chips correctaly" time="0.034">
+    </testcase>
+    <testcase classname="CategoryListComponent check remove event emitted" name="CategoryListComponent check remove event emitted" time="0.017">
     </testcase>
   </testsuite>
-  <testsuite name="EntrysManagerComponent" errors="0" failures="1" skipped="0" timestamp="2025-03-30T19:15:41" time="12.392" tests="1">
-    <testcase classname="EntrysManagerComponent should create" name="EntrysManagerComponent should create" time="0.024">
-      <failure>NullInjectorError: R3InjectorError(DynamicTestModule)[Store -&gt; Store]: 
-  NullInjectorError: No provider for Store!
-    at NullInjector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11256:27)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at R3Injector.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:11423:33)
-    at NgModuleRef.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21986:33)
-    at Object.get (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21663:35)
-    at lookupTokenUsingModuleInjector (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3374:39)
-    at getOrCreateInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3486:12)
-    at ɵɵdirectiveInject (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:14531:12)
-    at NodeInjectorFactory.EntrysManagerComponent_Factory [as factory] (ng:///EntrysManagerComponent/ɵfac.js:5:50)
-    at getNodeInjectable (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:3581:44)
-    at instantiateRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:10292:23)
-    at createRootComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:12395:23)
-    at ComponentFactory.create (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:21752:25)
-    at initComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1771:51)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Object.onInvoke (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25719:33)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at NgZone.run (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\core.mjs:25573:28)
-    at TestBedRender3.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1774:41)
-    at Function.createComponent (C:\Projetos\it-case\it-front\node_modules\@angular\core\fesm2020\testing.mjs:1615:37)
-    at C:\Projetos\it-case\it-front\src\app\modules\entrys\pages\entrys-manager\entrys-manager.component.spec.ts:17:23
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:409:30)
-    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3830:43)
-    at _ZoneDelegate.Object.&lt;anonymous&gt;._ZoneDelegate.invoke (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:408:56)
-    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:169:47)
-    at Object.wrappedFunc (C:\Projetos\it-case\it-front\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4330:34)
-    at Promise.then.completed (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:333:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\utils.js:259:10)
-    at _callCircusHook (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:240:40)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at _runTest (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:202:5)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:97:9)
-    at _runTestsForDescribeBlock (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:91:9)
-    at run (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\run.js:31:3)
-    at runAndTransformResultsToJestFormat (C:\Projetos\it-case\it-front\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:135:21)</failure>
+  <testsuite name="EntrysFilterComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.782" tests="5">
+    <testcase classname="EntrysFilterComponent should create" name="EntrysFilterComponent should create" time="0.167">
+    </testcase>
+    <testcase classname="EntrysFilterComponent should initialize form" name="EntrysFilterComponent should initialize form" time="0.045">
+    </testcase>
+    <testcase classname="EntrysFilterComponent should emit filter event on form value change" name="EntrysFilterComponent should emit filter event on form value change" time="0.039">
+    </testcase>
+    <testcase classname="EntrysFilterComponent should select categories from store" name="EntrysFilterComponent should select categories from store" time="0.03">
+    </testcase>
+    <testcase classname="EntrysFilterComponent should unsubscribe and destroy" name="EntrysFilterComponent should unsubscribe and destroy" time="0.037">
+    </testcase>
+  </testsuite>
+  <testsuite name="EntrysFormComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="4.037" tests="4">
+    <testcase classname="EntrysFormComponent should create" name="EntrysFormComponent should create" time="0.17">
+    </testcase>
+    <testcase classname="EntrysFormComponent trigger dialogRef.close() with the form data when sendForm() is fired" name="EntrysFormComponent trigger dialogRef.close() with the form data when sendForm() is fired" time="0.065">
+    </testcase>
+    <testcase classname="EntrysFormComponent should invalidate the form if required fields are empty" name="EntrysFormComponent should invalidate the form if required fields are empty" time="0.052">
+    </testcase>
+    <testcase classname="EntrysFormComponent should call categories to store" name="EntrysFormComponent should call categories to store" time="0.052">
+    </testcase>
+  </testsuite>
+  <testsuite name="EntrysManagerComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="4.968" tests="8">
+    <testcase classname="EntrysManagerComponent should create" name="EntrysManagerComponent should create" time="0.035">
+    </testcase>
+    <testcase classname="EntrysManagerComponent should initialize observers and load data" name="EntrysManagerComponent should initialize observers and load data" time="0.007">
+    </testcase>
+    <testcase classname="EntrysManagerComponent should set up MutationObserver for theme changes" name="EntrysManagerComponent should set up MutationObserver for theme changes" time="0.006">
+    </testcase>
+    <testcase classname="EntrysManagerComponent should set up ResizeObserver for resize events" name="EntrysManagerComponent should set up ResizeObserver for resize events" time="0.005">
+    </testcase>
+    <testcase classname="EntrysManagerComponent should load entrys with categories and create chart" name="EntrysManagerComponent should load entrys with categories and create chart" time="0.1">
+    </testcase>
+    <testcase classname="EntrysManagerComponent should open EntrysFormComponent dialog" name="EntrysManagerComponent should open EntrysFormComponent dialog" time="0.004">
+    </testcase>
+    <testcase classname="EntrysManagerComponent should call remove method with entry id" name="EntrysManagerComponent should call remove method with entry id" time="0.01">
+    </testcase>
+    <testcase classname="EntrysManagerComponent filters should filter by description" name="EntrysManagerComponent filters should filter by description" time="0.005">
     </testcase>
   </testsuite>
 </testsuites>
