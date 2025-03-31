@@ -47,7 +47,7 @@ Este projeto utiliza **Docker** para facilitar a configuração e execução em 
 docker-compose up
 ```
 
-Após isso estará disponível na porta http://localhost:80
+Após isso estará disponível na porta http://localhost:8080
 
 Caso não queira utilizar o docker, é possível rodar esse projeto utilizando a CLI do Angular
 
