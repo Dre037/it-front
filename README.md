@@ -48,14 +48,8 @@ docker-compose up
 ```
 ## Informações Importantes
 
-O projeto se comunica com uma API oferecida por esse repositório [**it-api-case**](https://github.com/adelbs/it-api-case) é necessário clonar ele em uma pastinha
-
-Minha recomendação é seguir essa estrutura
+O projeto se comunica com uma API oferecida por esse repositório [**it-api-case**](https://github.com/adelbs/it-api-case) é necessário baixar este repositório e rodá-lo para conseguir usufruir da aplicação Front-end
 
 ```bash
--- it-case/
-    --it-api-case/
-    --it-front/
+node index.js
 ```
-
-Pois o dockerfile é capaz de configurar ambos os ambientes e permitir seu funcionamento sem muito esforço.
