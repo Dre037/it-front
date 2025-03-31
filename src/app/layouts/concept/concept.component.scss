@@ -1,4 +1,4 @@
-@import '../../../theme/material-theme.scss';
+@use '../../../theme/material-theme.scss' as *;
 
 mat-sidenav-container {
     height: calc(100% - 64px);

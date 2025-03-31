@@ -1,4 +1,4 @@
-@import '../../../../../theme/material-theme.scss';
+@use '../../../../../theme/material-theme.scss' as *;
 
 .table-container {
     width: 100%;

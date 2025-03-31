@@ -1,9 +1,9 @@
-FROM node:16 as build
+FROM node:18-alpine as build
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
-RUN npm install
+COPY package*.json ./
+RUN npm install --production
 
 COPY . .
 RUN npm run build --prod
