@@ -5,11 +5,11 @@
         <mat-icon matSuffix>search</mat-icon>
     </mat-form-field>
     <mat-form-field appearance="outline">
-        <mat-label>{{'ENTRYS.FORM.CATEGORY' | translate}}</mat-label>
-        <mat-select formControlName="categories" multiple>
+        <label mat-label for="categoryFilter">{{'ENTRYS.FORM.CATEGORY' | translate}}</label>
+        <mat-select id="categoryFilter" formControlName="categories" multiple>
             <mat-select-trigger>
                 <ng-container *ngIf="filterForm.get('categories').value as categories">
-                    {{categories ? categories[0]?.name : ''}}
+                    {{categories && categories.length > 0 ? categories[0]?.name : ''}}
                     <span *ngIf="categories.length > 1">
                         (+{{categories.length - 1}} {{(categories.length == 2 ? 'ENTRYS.OTHER' : 'ENTRYS.OTHERS')| translate}})
                     </span>

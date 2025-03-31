@@ -11,8 +11,6 @@ export class CategoryListComponent {
   @Input() items!: Category[]
   @Output() remove = new EventEmitter<Category>()
 
-  public displayedColumns = ['it-name', 'it-actions']
-
   constructor() { }
 
   public deleteEvent(category: Category) {

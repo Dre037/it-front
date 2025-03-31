@@ -24,6 +24,9 @@
       "jest"
     ],
     "paths": {
+      "@assets/*": [
+        "src/assets/*"
+      ],
       "@env/*": [
         "src/environments/*"
       ],

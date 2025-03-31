@@ -5,8 +5,8 @@
     <input type="text" matInput [formControl]="control">
     <mat-hint>{{'CATEGORY.FORM.CATEGORY_MINMAX' | translate : { min: 4, max: 40 } }}</mat-hint>
     <mat-error *ngIf="control.hasError('required')">{{'CATEGORY.FORM.FIELD_REQUIRED' | translate}}</mat-error>
-    <mat-error *ngIf="control.hasError('minLength')">{{'CATEGORY.FORM.CATEGORY_MINLENGTH' | translate}}</mat-error>
-    <mat-error *ngIf="control.hasError('maxength')">{{'CATEGORY.FORM.CATEGORY_MAXLENGTH' | translate}}</mat-error>
+    <mat-error *ngIf="control.hasError('minlength')">{{'CATEGORY.FORM.CATEGORY_MINLENGTH' | translate}}</mat-error>
+    <mat-error *ngIf="control.hasError('maxlength')">{{'CATEGORY.FORM.CATEGORY_MAXLENGTH' | translate}}</mat-error>
 </mat-form-field>
 <div class="action-buttons">
     <button mat-button color="primary" mat-dialog-close>{{'CATEGORY.FORM.BACK' | translate}}</button>

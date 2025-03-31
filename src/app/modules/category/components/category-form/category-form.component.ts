@@ -6,13 +6,9 @@ import { FormControl, Validators } from '@angular/forms';
   templateUrl: './category-form.component.html',
   styleUrls: ['./category-form.component.scss']
 })
-export class CategoryFormComponent implements OnInit {
+export class CategoryFormComponent {
 
   public control = new FormControl('', { validators: Validators.compose([Validators.required, Validators.minLength(4), Validators.maxLength(40) ]) })
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
