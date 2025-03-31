@@ -1,4 +1,4 @@
-# Projeto Angular 13
+# it-front case
 
 Este projeto foi desenvolvido utilizando o Angular 13
 
