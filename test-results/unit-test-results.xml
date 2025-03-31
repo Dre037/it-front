@@ -1,135 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="54" failures="0" errors="0" time="7.092">
-  <testsuite name="HttpApiService" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.216" tests="6">
-    <testcase classname="HttpApiService should be created" name="HttpApiService should be created" time="0.025">
-    </testcase>
-    <testcase classname="HttpApiService should perform a GET request" name="HttpApiService should perform a GET request" time="0.007">
-    </testcase>
-    <testcase classname="HttpApiService should perform a POST request" name="HttpApiService should perform a POST request" time="0.004">
-    </testcase>
-    <testcase classname="HttpApiService should perform a PUT request" name="HttpApiService should perform a PUT request" time="0.004">
-    </testcase>
-    <testcase classname="HttpApiService should perform a DELETE request" name="HttpApiService should perform a DELETE request" time="0.003">
-    </testcase>
-    <testcase classname="HttpApiService should handle errors correctly" name="HttpApiService should handle errors correctly" time="0.005">
-    </testcase>
-  </testsuite>
-  <testsuite name="CategoryApiService" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.238" tests="5">
+<testsuites name="jest tests" tests="54" failures="0" errors="0" time="9.121">
+  <testsuite name="CategoryApiService" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:29" time="3.736" tests="5">
     <testcase classname="CategoryApiService should be created" name="CategoryApiService should be created" time="0.027">
     </testcase>
-    <testcase classname="CategoryApiService create should call post with parameters" name="CategoryApiService create should call post with parameters" time="0.007">
+    <testcase classname="CategoryApiService create should call post with parameters" name="CategoryApiService create should call post with parameters" time="0.005">
     </testcase>
     <testcase classname="CategoryApiService list should call get and return list of categories" name="CategoryApiService list should call get and return list of categories" time="0.003">
     </testcase>
-    <testcase classname="CategoryApiService detail should call get and return detail of unique category" name="CategoryApiService detail should call get and return detail of unique category" time="0.003">
+    <testcase classname="CategoryApiService detail should call get and return detail of unique category" name="CategoryApiService detail should call get and return detail of unique category" time="0.004">
     </testcase>
-    <testcase classname="CategoryApiService remove should call delete with correct id" name="CategoryApiService remove should call delete with correct id" time="0.003">
+    <testcase classname="CategoryApiService remove should call delete with correct id" name="CategoryApiService remove should call delete with correct id" time="0.002">
     </testcase>
   </testsuite>
-  <testsuite name="EntrysApiService" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.338" tests="5">
-    <testcase classname="EntrysApiService should be created" name="EntrysApiService should be created" time="0.027">
+  <testsuite name="EntrysApiService" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:29" time="3.94" tests="5">
+    <testcase classname="EntrysApiService should be created" name="EntrysApiService should be created" time="0.035">
     </testcase>
-    <testcase classname="EntrysApiService create should call post with parameters" name="EntrysApiService create should call post with parameters" time="0.006">
+    <testcase classname="EntrysApiService create should call post with parameters" name="EntrysApiService create should call post with parameters" time="0.009">
     </testcase>
     <testcase classname="EntrysApiService list should call get and return list of entrys" name="EntrysApiService list should call get and return list of entrys" time="0.004">
     </testcase>
-    <testcase classname="EntrysApiService detail should call get and return detail of unique entrys" name="EntrysApiService detail should call get and return detail of unique entrys" time="0.003">
+    <testcase classname="EntrysApiService detail should call get and return detail of unique entrys" name="EntrysApiService detail should call get and return detail of unique entrys" time="0.005">
     </testcase>
-    <testcase classname="EntrysApiService remove should call delete with correct id" name="EntrysApiService remove should call delete with correct id" time="0.003">
-    </testcase>
-  </testsuite>
-  <testsuite name="ConceptComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.339" tests="5">
-    <testcase classname="ConceptComponent should create" name="ConceptComponent should create" time="0.097">
-    </testcase>
-    <testcase classname="ConceptComponent should initialize with dark theme if localStorage has dark theme" name="ConceptComponent should initialize with dark theme if localStorage has dark theme" time="0.02">
-    </testcase>
-    <testcase classname="ConceptComponent should subscribe to route changes and update currentUrl" name="ConceptComponent should subscribe to route changes and update currentUrl" time="0.011">
-    </testcase>
-    <testcase classname="ConceptComponent should unsubscribe$ completed" name="ConceptComponent should unsubscribe$ completed" time="0.02">
-    </testcase>
-    <testcase classname="ConceptComponent setulLight should remove dark-theme class and set light theme in localStorage" name="ConceptComponent setulLight should remove dark-theme class and set light theme in localStorage" time="0.013">
+    <testcase classname="EntrysApiService remove should call delete with correct id" name="EntrysApiService remove should call delete with correct id" time="0.004">
     </testcase>
   </testsuite>
-  <testsuite name="DialogRemoveComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.496" tests="3">
-    <testcase classname="DialogRemoveComponent should create" name="DialogRemoveComponent should create" time="0.062">
+  <testsuite name="HttpApiService" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:29" time="3.927" tests="6">
+    <testcase classname="HttpApiService should be created" name="HttpApiService should be created" time="0.034">
     </testcase>
-    <testcase classname="DialogRemoveComponent check control is invalid" name="DialogRemoveComponent check control is invalid" time="0.014">
+    <testcase classname="HttpApiService should perform a GET request" name="HttpApiService should perform a GET request" time="0.009">
     </testcase>
-    <testcase classname="DialogRemoveComponent check control valid" name="DialogRemoveComponent check control valid" time="0.018">
+    <testcase classname="HttpApiService should perform a POST request" name="HttpApiService should perform a POST request" time="0.005">
+    </testcase>
+    <testcase classname="HttpApiService should perform a PUT request" name="HttpApiService should perform a PUT request" time="0.004">
+    </testcase>
+    <testcase classname="HttpApiService should perform a DELETE request" name="HttpApiService should perform a DELETE request" time="0.006">
+    </testcase>
+    <testcase classname="HttpApiService should handle errors correctly" name="HttpApiService should handle errors correctly" time="0.01">
     </testcase>
   </testsuite>
-  <testsuite name="CategoryManagerComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.534" tests="4">
-    <testcase classname="CategoryManagerComponent should create" name="CategoryManagerComponent should create" time="0.051">
+  <testsuite name="ConceptComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:29" time="4.101" tests="5">
+    <testcase classname="ConceptComponent should create" name="ConceptComponent should create" time="0.137">
     </testcase>
-    <testcase classname="CategoryManagerComponent dispatch fetchCategories on load component" name="CategoryManagerComponent dispatch fetchCategories on load component" time="0.014">
+    <testcase classname="ConceptComponent should initialize with dark theme if localStorage has dark theme" name="ConceptComponent should initialize with dark theme if localStorage has dark theme" time="0.022">
+    </testcase>
+    <testcase classname="ConceptComponent should subscribe to route changes and update currentUrl" name="ConceptComponent should subscribe to route changes and update currentUrl" time="0.017">
+    </testcase>
+    <testcase classname="ConceptComponent should unsubscribe$ completed" name="ConceptComponent should unsubscribe$ completed" time="0.018">
+    </testcase>
+    <testcase classname="ConceptComponent setulLight should remove dark-theme class and set light theme in localStorage" name="ConceptComponent setulLight should remove dark-theme class and set light theme in localStorage" time="0.016">
+    </testcase>
+  </testsuite>
+  <testsuite name="CategoryManagerComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:28" time="4.193" tests="4">
+    <testcase classname="CategoryManagerComponent should create" name="CategoryManagerComponent should create" time="0.08">
+    </testcase>
+    <testcase classname="CategoryManagerComponent dispatch fetchCategories on load component" name="CategoryManagerComponent dispatch fetchCategories on load component" time="0.015">
     </testcase>
     <testcase classname="CategoryManagerComponent check dialog opened after trigger open method" name="CategoryManagerComponent check dialog opened after trigger open method" time="0.011">
     </testcase>
     <testcase classname="CategoryManagerComponent check action remove is fired after trigger removeCategory" name="CategoryManagerComponent check action remove is fired after trigger removeCategory" time="0.008">
     </testcase>
   </testsuite>
-  <testsuite name="CategoryFormComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.547" tests="3">
-    <testcase classname="CategoryFormComponent should create" name="CategoryFormComponent should create" time="0.071">
+  <testsuite name="DialogRemoveComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:29" time="4.241" tests="3">
+    <testcase classname="DialogRemoveComponent should create" name="DialogRemoveComponent should create" time="0.085">
     </testcase>
-    <testcase classname="CategoryFormComponent init form correctaly" name="CategoryFormComponent init form correctaly" time="0.024">
+    <testcase classname="DialogRemoveComponent check control is invalid" name="DialogRemoveComponent check control is invalid" time="0.013">
+    </testcase>
+    <testcase classname="DialogRemoveComponent check control valid" name="DialogRemoveComponent check control valid" time="0.01">
+    </testcase>
+  </testsuite>
+  <testsuite name="CategoryListComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:29" time="4.292" tests="3">
+    <testcase classname="CategoryListComponent should create" name="CategoryListComponent should create" time="0.067">
+    </testcase>
+    <testcase classname="CategoryListComponent registry chips correctaly" name="CategoryListComponent registry chips correctaly" time="0.029">
+    </testcase>
+    <testcase classname="CategoryListComponent check remove event emitted" name="CategoryListComponent check remove event emitted" time="0.026">
+    </testcase>
+  </testsuite>
+  <testsuite name="CategoryFormComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:29" time="4.308" tests="3">
+    <testcase classname="CategoryFormComponent should create" name="CategoryFormComponent should create" time="0.084">
+    </testcase>
+    <testcase classname="CategoryFormComponent init form correctaly" name="CategoryFormComponent init form correctaly" time="0.016">
     </testcase>
     <testcase classname="CategoryFormComponent check field is valid" name="CategoryFormComponent check field is valid" time="0.017">
     </testcase>
   </testsuite>
-  <testsuite name="EntrysListComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.6" tests="3">
-    <testcase classname="EntrysListComponent should create" name="EntrysListComponent should create" time="0.106">
+  <testsuite name="EntrysListComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:29" time="4.323" tests="3">
+    <testcase classname="EntrysListComponent should create" name="EntrysListComponent should create" time="0.131">
     </testcase>
-    <testcase classname="EntrysListComponent compute totalCount correctly" name="EntrysListComponent compute totalCount correctly" time="0.037">
+    <testcase classname="EntrysListComponent compute totalCount correctly" name="EntrysListComponent compute totalCount correctly" time="0.031">
     </testcase>
     <testcase classname="EntrysListComponent emit remove action when deleteEvent is called" name="EntrysListComponent emit remove action when deleteEvent is called" time="0.03">
     </testcase>
   </testsuite>
-  <testsuite name="CategoryListComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.627" tests="3">
-    <testcase classname="CategoryListComponent should create" name="CategoryListComponent should create" time="0.075">
+  <testsuite name="EntrysFilterComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:29" time="4.572" tests="5">
+    <testcase classname="EntrysFilterComponent should create" name="EntrysFilterComponent should create" time="0.215">
     </testcase>
-    <testcase classname="CategoryListComponent registry chips correctaly" name="CategoryListComponent registry chips correctaly" time="0.034">
+    <testcase classname="EntrysFilterComponent should initialize form" name="EntrysFilterComponent should initialize form" time="0.065">
     </testcase>
-    <testcase classname="CategoryListComponent check remove event emitted" name="CategoryListComponent check remove event emitted" time="0.017">
+    <testcase classname="EntrysFilterComponent should emit filter event on form value change" name="EntrysFilterComponent should emit filter event on form value change" time="0.04">
     </testcase>
-  </testsuite>
-  <testsuite name="EntrysFilterComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="3.782" tests="5">
-    <testcase classname="EntrysFilterComponent should create" name="EntrysFilterComponent should create" time="0.167">
+    <testcase classname="EntrysFilterComponent should select categories from store" name="EntrysFilterComponent should select categories from store" time="0.046">
     </testcase>
-    <testcase classname="EntrysFilterComponent should initialize form" name="EntrysFilterComponent should initialize form" time="0.045">
-    </testcase>
-    <testcase classname="EntrysFilterComponent should emit filter event on form value change" name="EntrysFilterComponent should emit filter event on form value change" time="0.039">
-    </testcase>
-    <testcase classname="EntrysFilterComponent should select categories from store" name="EntrysFilterComponent should select categories from store" time="0.03">
-    </testcase>
-    <testcase classname="EntrysFilterComponent should unsubscribe and destroy" name="EntrysFilterComponent should unsubscribe and destroy" time="0.037">
+    <testcase classname="EntrysFilterComponent should unsubscribe and destroy" name="EntrysFilterComponent should unsubscribe and destroy" time="0.041">
     </testcase>
   </testsuite>
-  <testsuite name="EntrysFormComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="4.037" tests="4">
-    <testcase classname="EntrysFormComponent should create" name="EntrysFormComponent should create" time="0.17">
+  <testsuite name="EntrysFormComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:29" time="4.815" tests="4">
+    <testcase classname="EntrysFormComponent should create" name="EntrysFormComponent should create" time="0.211">
     </testcase>
-    <testcase classname="EntrysFormComponent trigger dialogRef.close() with the form data when sendForm() is fired" name="EntrysFormComponent trigger dialogRef.close() with the form data when sendForm() is fired" time="0.065">
+    <testcase classname="EntrysFormComponent trigger dialogRef.close() with the form data when sendForm() is fired" name="EntrysFormComponent trigger dialogRef.close() with the form data when sendForm() is fired" time="0.071">
     </testcase>
-    <testcase classname="EntrysFormComponent should invalidate the form if required fields are empty" name="EntrysFormComponent should invalidate the form if required fields are empty" time="0.052">
+    <testcase classname="EntrysFormComponent should invalidate the form if required fields are empty" name="EntrysFormComponent should invalidate the form if required fields are empty" time="0.059">
     </testcase>
-    <testcase classname="EntrysFormComponent should call categories to store" name="EntrysFormComponent should call categories to store" time="0.052">
+    <testcase classname="EntrysFormComponent should call categories to store" name="EntrysFormComponent should call categories to store" time="0.057">
     </testcase>
   </testsuite>
-  <testsuite name="EntrysManagerComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T02:57:57" time="4.968" tests="8">
+  <testsuite name="EntrysManagerComponent" errors="0" failures="0" skipped="0" timestamp="2025-03-31T13:28:28" time="6.358" tests="8">
     <testcase classname="EntrysManagerComponent should create" name="EntrysManagerComponent should create" time="0.035">
     </testcase>
-    <testcase classname="EntrysManagerComponent should initialize observers and load data" name="EntrysManagerComponent should initialize observers and load data" time="0.007">
+    <testcase classname="EntrysManagerComponent should initialize observers and load data" name="EntrysManagerComponent should initialize observers and load data" time="0.006">
     </testcase>
-    <testcase classname="EntrysManagerComponent should set up MutationObserver for theme changes" name="EntrysManagerComponent should set up MutationObserver for theme changes" time="0.006">
+    <testcase classname="EntrysManagerComponent should set up MutationObserver for theme changes" name="EntrysManagerComponent should set up MutationObserver for theme changes" time="0.01">
     </testcase>
     <testcase classname="EntrysManagerComponent should set up ResizeObserver for resize events" name="EntrysManagerComponent should set up ResizeObserver for resize events" time="0.005">
     </testcase>
-    <testcase classname="EntrysManagerComponent should load entrys with categories and create chart" name="EntrysManagerComponent should load entrys with categories and create chart" time="0.1">
+    <testcase classname="EntrysManagerComponent should load entrys with categories and create chart" name="EntrysManagerComponent should load entrys with categories and create chart" time="0.114">
     </testcase>
-    <testcase classname="EntrysManagerComponent should open EntrysFormComponent dialog" name="EntrysManagerComponent should open EntrysFormComponent dialog" time="0.004">
+    <testcase classname="EntrysManagerComponent should open EntrysFormComponent dialog" name="EntrysManagerComponent should open EntrysFormComponent dialog" time="0.006">
     </testcase>
-    <testcase classname="EntrysManagerComponent should call remove method with entry id" name="EntrysManagerComponent should call remove method with entry id" time="0.01">
+    <testcase classname="EntrysManagerComponent should call remove method with entry id" name="EntrysManagerComponent should call remove method with entry id" time="0.006">
     </testcase>
-    <testcase classname="EntrysManagerComponent filters should filter by description" name="EntrysManagerComponent filters should filter by description" time="0.005">
+    <testcase classname="EntrysManagerComponent filters should filter by description" name="EntrysManagerComponent filters should filter by description" time="0.012">
     </testcase>
   </testsuite>
 </testsuites>

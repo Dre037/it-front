@@ -46,6 +46,18 @@ Este projeto utiliza **Docker** para facilitar a configuração e execução em 
 ```bash 
 docker-compose up
 ```
+
+Após isso estará disponível na porta http://localhost:80
+
+Caso não queira utilizar o docker, é possível rodar esse projeto utilizando a CLI do Angular
+
+```bash
+npm install
+npm run start
+```
+
+Após isso estará disponível na porta http://localhost:4200
+
 ## Informações Importantes
 
 O projeto se comunica com uma API oferecida por esse repositório [**it-api-case**](https://github.com/adelbs/it-api-case) é necessário baixar este repositório e rodá-lo para conseguir usufruir da aplicação Front-end

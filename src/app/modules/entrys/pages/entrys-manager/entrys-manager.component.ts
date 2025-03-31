@@ -78,6 +78,7 @@ export class EntrysManagerComponent extends CommonManager<EntrysApiService, Entr
     ).subscribe(items => {
       this.initialState = items
       this.itemsSubj.next(items)
+      if (this.chart) this.chart.destroy()
       this.createChart()
     })
   }
