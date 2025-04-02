@@ -63,3 +63,21 @@ O projeto se comunica com uma API oferecida por esse repositório [**it-api-case
 ```bash
 node index.js
 ```
+
+## Futuro
+
+### Observalidade, Monitoramento e LOG
+
+Para essas situações, traria soluções como o [***Sentry***](https://sentry.io) para monitoramento dos LOGs com registros de Warning e Exceção
+
+### Segurança
+
+Ao ter requisições que precisam de autenticação, adicionar etapas com Interceptors.
+
+### Acessibilidade
+
+Ajustar pontos de SEO do sistema, e realizar testes com leitor de tela para garantir as identificações
+
+### Esteira CI/CD
+
+Construir pipelines capazes de testar o código, e distribuir ele.
