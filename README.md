@@ -1,16 +1,16 @@
-# Projeto Angular 13
+# it-front case
 
-Este projeto foi desenvolvido utilizando o Angular 13, uma das versões mais estáveis e robustas da plataforma Angular. O foco principal foi garantir a escalabilidade e alta disponibilidade do sistema, além de proporcionar uma excelente experiência para os usuários finais.
+Este projeto foi desenvolvido utilizando o Angular 13
 
 ## Gerenciamento de Estado
 
-Para garantir a escalabilidade e alta disponibilidade do projeto, adotamos **recursos de gerenciamento de estado**. Essa abordagem permite um controle eficaz dos dados compartilhados entre os componentes e a gestão eficiente do fluxo de informações no sistema. 
+Buscando atender demanda de escalabilidade e alta disponibilidade, adotei **recursos de gerenciamento de estado**. Essa abordagem permite um controle eficaz dos dados compartilhados entre os componentes e a gestão eficiente do fluxo de informações no sistema. 
 
 Esses recursos ajudam a evitar problemas como inconsistências de dados, melhorando a performance e tornando o sistema mais resiliente a falhas, o que é crucial para projetos de grande escala.
 
 ## Garantia de Qualidade
 
-Para garantir um funcionamento de qualidade e a confiabilidade do sistema, implementamos **testes de integração e unitários** utilizando o **Jest** como framework de testes. Essa abordagem permite:
+Para garantir um funcionamento de qualidade e a confiabilidade do sistema, implementei **testes de integração e unitários** com o **Jest** como framework de testes. Essa abordagem permite:
 
 - **Testes Unitários**: Validação de funções e componentes de forma isolada, garantindo que cada unidade de código se comporte conforme esperado.
   
@@ -23,8 +23,6 @@ A utilização de testes automatizados assegura que as mudanças no código não
 - **Velocidade**: Jest oferece uma execução rápida dos testes, o que facilita o ciclo de desenvolvimento.
 - **Cobertura de Código**: Fácil integração com ferramentas de cobertura de código, ajudando a identificar áreas do sistema que não estão sendo testadas.
 - **Facilidade de Uso**: Configuração simples e integração com o Angular CLI, permitindo testes eficazes com mínima complexidade.
-  
-A combinação do gerenciamento de estado eficiente com uma robusta estratégia de testes permite que o projeto Angular 13 seja escalável, confiável e de alta performance.
 
 ### Como Rodar os Testes
 
@@ -47,7 +45,7 @@ Este projeto utiliza **Docker** para facilitar a configuração e execução em 
 docker-compose up
 ```
 
-Após isso estará disponível na porta http://localhost:80
+Após isso estará disponível na porta http://localhost:8080
 
 Caso não queira utilizar o docker, é possível rodar esse projeto utilizando a CLI do Angular
 
@@ -65,3 +63,21 @@ O projeto se comunica com uma API oferecida por esse repositório [**it-api-case
 ```bash
 node index.js
 ```
+
+## Futuro
+
+### Observalidade, Monitoramento e LOG
+
+Para essas situações, traria soluções como o [***Sentry***](https://sentry.io) para monitoramento dos LOGs com registros de Warning e Exceção
+
+### Segurança
+
+Ao ter requisições que precisam de autenticação, adicionar etapas com Interceptors.
+
+### Acessibilidade
+
+Ajustar pontos de SEO do sistema, e realizar testes com leitor de tela para garantir as identificações
+
+### Esteira CI/CD
+
+Construir pipelines capazes de testar o código, e distribuir ele.
